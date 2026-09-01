@@ -1,285 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stevorra — Your Trusted Representative</title>
-<meta name="description" content="Stevorra is Africa's premium representation and stewardship company — trusted execution for executives, diaspora families, and organizations who can't be there in person.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" type="image/png" href="images/stevorra_logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stevorra | Your Trusted Representative</title>
+    
+    <!-- Google Fonts: Strictly Cormorant Garamond & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+     <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    
 </head>
 <body>
 
-<header class="site-nav" id="siteNav">
-  <div class="wrap nav-inner">
-    <a href="#top" class="nav-brand" aria-label="Stevorra home">
-      <img src="images/stevorra_logo.png" alt="Stevorra">
-      <span>STEVORRA</span>
-    </a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="#top">Home</a>
-      <a href="#about-placeholder" data-future="About">About</a>
-      <a href="#services">Services</a>
-      <a href="#case-studies-placeholder" data-future="Case Studies">Case Studies</a>
-      <a href="#faq-placeholder" data-future="FAQ">FAQ</a>
-      <a href="#book">Contact</a>
-    </nav>
-    <div class="nav-cta">
-      <a href="#book" class="btn btn-primary">Book a Consultation</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
-        <svg id="iconMenu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
-        <svg id="iconClose" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="display:none;"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
-      </button>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-location">
+                <i class="fa-solid fa-location-dot"></i> Lagos, Nigeria
+            </div>
+            <div class="top-bar-contact">
+                <span><i class="fa-solid fa-envelope"></i> hello.stevorra.com@gmail.com</span>
+                <span><i class="fa-solid fa-phone"></i> 07031258899</span>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="mobile-panel" id="mobilePanel">
-    <a class="mobile-link" href="#top">Home</a>
-    <a class="mobile-link" href="#about-placeholder" data-future="About">About</a>
-    <a class="mobile-link" href="#services">Services</a>
-    <a class="mobile-link" href="#case-studies-placeholder" data-future="Case Studies">Case Studies</a>
-    <a class="mobile-link" href="#faq-placeholder" data-future="FAQ">FAQ</a>
-    <a class="mobile-link" href="#book">Contact</a>
-  </div>
-</header>
 
-<main>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="Stevorra home">
+                <img src="Images/logo2.png" alt="Stevorra logo" class="brand-logo">
+            </a>
+            <ul class="nav-links">
+                <!-- Using actual HTML file links for a multi-page setup -->
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="case-study.html">Case Study</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="mobile-menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+            </div>
+        </div>
+    </header>
 
-  <section class="hero reg-frame" id="top">
-    <div class="reg-mark tl"></div>
-    <div class="reg-mark tr"></div>
-    <div class="reg-mark bl"></div>
-    <div class="reg-mark br"></div>
-    <img class="hero-watermark" src="images/logo.png" alt="">
-    <div class="wrap">
-      <div class="hero-inner">
-        <p class="eyebrow eyebrow-gold hero-kicker"><span class="eyebrow-dash"></span>Africa's Premium Representation &amp; Stewardship Company</p>
-        <h1>Your <em>Trusted</em> Representative.</h1>
-        <p class="hero-sub">Whether you're managing a project, maintaining a property, sourcing something important, or trying to get things done from another country entirely, Stevorra stands in for you — with discretion, transparency, and complete accountability.</p>
-        <div class="hero-actions">
-          <a href="#book" class="btn btn-primary">Book a Consultation</a>
-          <a href="#how-it-works" class="btn btn-ghost-light">See How It Works</a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content reveal-left">
+                <span class="subtitle">Premium Representation</span>
+                <h1>Execute projects remotely with <span>confidence.</span></h1>
+                <p>Whether you're managing a project, maintaining a property, sourcing something important, or trying to get things done from another country entirely, Stevorra stands in for you.</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
+                    <a href="about.html" class="btn btn-outline-light">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper reveal-right">
+                <div class="hero-slider" aria-live="polite">
+                    <div class="hero-slide active">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Project execution and team coordination">
+                        <div class="slide-badge">Projects</div>
+                    </div>
+                    <div class="hero-slide">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="Property sourcing and supervision">
+                        <div class="slide-badge">Property Sourcing &amp; Supervision</div>
+                    </div>
+                    <div class="hero-slide">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" alt="Corporate office operations and client support">
+                        <div class="slide-badge">Corporate Office</div>
+                    </div>
+                    <div class="hero-slider-dots" aria-label="Hero slide controls">
+                        <button class="active" type="button" aria-label="Show project slide" data-slide="0"></button>
+                        <button type="button" aria-label="Show property slide" data-slide="1"></button>
+                        <button type="button" aria-label="Show corporate office slide" data-slide="2"></button>
+                    </div>
+                </div>
+                <div class="stats-box">
+                    <div>
+                        <h3>100%</h3>
+                        <p>Documented<br>Accountability</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p class="hero-meta">Based in Nigeria — Serving Clients Across the Diaspora</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="intro">
-    <div class="wrap">
-      <div class="lc-grid">
-        <div class="lc-label reveal">
-          <p class="eyebrow eyebrow-green">01 — Introduction</p>
-          <div class="lc-rule" style="background:var(--green);"></div>
-        </div>
-        <div class="reveal">
-          <p>Stevorra is a premium representation and stewardship company helping executives, individuals, and organizations execute projects and important priorities with confidence.</p>
-          <p>Wherever you are, distance should never stand between you and quality execution. We become your representative on the ground — coordinating people, overseeing processes, verifying information, and protecting your interests at every step.</p>
-          <p class="intro-close">Because what matters most isn't just getting things done. It's knowing they were done right.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- About Section Overview -->
+    <section class="section-padding">
+        <div class="container intro-grid">
+            <div class="intro-content reveal-left">
+                <span class="subtitle">Why Stevorra</span>
+                <h2>Helping executives and diaspora build stronger futures.</h2>
+                <p>Wherever you are, distance should never stand between you and quality execution. We become your representative on the ground — coordinating people, overseeing processes, verifying information, and protecting your interests at every step.</p>
 
-  <section class="serve" id="who-we-serve">
-    <div class="wrap">
-      <div class="serve-head reveal">
-        <p class="eyebrow eyebrow-gold"><span class="eyebrow-dash"></span>02 — Who We Serve</p>
-        <h2>Built for people who can't be everywhere at once.</h2>
-      </div>
-      <div class="serve-grid reveal">
-        <div class="serve-card">
-          <div class="serve-num">01</div>
-          <h3>Executives &amp; Business Leaders</h3>
-          <p>Trusted support, coordination, and operational execution for people running more than they can personally oversee.</p>
+                <div class="why-stevorra-grid">
+                    <article class="why-card">
+                        <div class="why-card-icon"><i class="fa-solid fa-user-shield"></i></div>
+                        <div class="why-card-copy">
+                            <h3>Representing you</h3>
+                            <p>We protect your interests first, never the vendor’s.</p>
+                        </div>
+                    </article>
+                    <article class="why-card">
+                        <div class="why-card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <div class="why-card-copy">
+                            <h3>Transparent process</h3>
+                            <p>No hidden markups, no vague updates, just clear accountability.</p>
+                        </div>
+                    </article>
+                    <article class="why-card">
+                        <div class="why-card-icon"><i class="fa-solid fa-bell"></i></div>
+                        <div class="why-card-copy">
+                            <h3>Proactive updates</h3>
+                            <p>We communicate early, often, and before issues become costly.</p>
+                        </div>
+                    </article>
+                    <article class="why-card">
+                        <div class="why-card-icon"><i class="fa-solid fa-file-lines"></i></div>
+                        <div class="why-card-copy">
+                            <h3>Documented execution</h3>
+                            <p>Every important step is tracked, recorded, and easy to verify.</p>
+                        </div>
+                    </article>
+                </div>
+                
+                <a href="about.html" class="btn btn-primary">Discover Our Story</a>
+            </div>
+            <div class="intro-images reveal-right">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Business leadership and strategic planning">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Collaborative team execution and project work">
+            </div>
         </div>
-        <div class="serve-card">
-          <div class="serve-num">02</div>
-          <h3>Diaspora Individuals &amp; Families</h3>
-          <p>A dependable presence on the ground for property, procurement, and personal priorities back home.</p>
-        </div>
-        <div class="serve-card">
-          <div class="serve-num">03</div>
-          <h3>Organizations &amp; Investors</h3>
-          <p>Reliable local representation, due diligence, and project oversight in Nigeria.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="services" id="services">
-    <div class="wrap">
-      <div class="services-head reveal">
-        <p class="eyebrow eyebrow-green"><span class="eyebrow-dash"></span>03 — Our Services</p>
-        <h2>Four ways we stand in for you.</h2>
-      </div>
-      <div class="reveal">
-        <div class="service-row">
-          <div class="service-code">01</div>
-          <div class="service-body">
-            <h3>Stevorra Procurement</h3>
-            <p>Strategic sourcing and purchasing, handled and accounted for.</p>
-          </div>
+    <!-- Services Grid Overview -->
+    <section class="services-section section-padding">
+        <div class="container">
+            <div class="services-header reveal">
+                <span class="subtitle">Our Services</span>
+                <h2>Designed to accelerate execution and protect your interests.</h2>
+                <p>Comprehensive stewardship tailored to protect your assets and execute your priorities in Africa.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card reveal delay-1">
+                    <div class="service-icon"><i class="fa-solid fa-boxes-packing"></i></div>
+                    <h3>Stevorra Procurement</h3>
+                    <p>Strategic sourcing and purchasing, handled and accounted for. We source options, get your approval before money moves.</p>
+                </div>
+                <div class="service-card reveal delay-2">
+                    <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Stevorra Verify</h3>
+                    <p>Independent due diligence and verification before you commit to anything important. Checking vendors, properties, or people.</p>
+                </div>
+                <div class="service-card reveal delay-3">
+                    <div class="service-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <h3>Stevorra Corporate</h3>
+                    <p>Project management, executive support, and operational strategy on contract. Serious operational support without hiring.</p>
+                </div>
+                <div class="service-card reveal delay-4">
+                    <div class="service-icon"><i class="fa-solid fa-building-user"></i></div>
+                    <h3>Stevorra Property</h3>
+                    <p>Ongoing oversight and maintenance for property you can't check on yourself. Routine checks, maintenance, and specific fixes.</p>
+                </div>
+            </div>
+            <div style="margin-top: 3rem;" class="reveal delay-4">
+                <a href="services.html" class="btn btn-primary">View All Services</a>
+            </div>
         </div>
-        <div class="service-row">
-          <div class="service-code">02</div>
-          <div class="service-body">
-            <h3>Stevorra Verify</h3>
-            <p>Due diligence and verification before you commit to anything important.</p>
-          </div>
-        </div>
-        <div class="service-row">
-          <div class="service-code">03</div>
-          <div class="service-body">
-            <h3>Stevorra Corporate</h3>
-            <p>Project management, executive support, and operational strategy, on contract.</p>
-          </div>
-        </div>
-        <div class="service-row">
-          <div class="service-code">04</div>
-          <div class="service-body">
-            <h3>Stevorra Property</h3>
-            <p>Ongoing oversight and maintenance for property you can't check on yourself.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="difference">
-    <div class="wrap">
-      <div class="lc-grid">
-        <div class="lc-label reveal">
-          <p class="eyebrow eyebrow-gold">04 — The Stevorra Difference</p>
-          <div class="lc-rule" style="background:var(--gold);"></div>
+    <!-- How It Works Section -->
+    <section class="how-it-works-section section-padding">
+        <div class="container timeline-container">
+            <div class="timeline-header reveal-left">
+                <span class="subtitle">Our Process</span>
+                <h2>How It Works</h2>
+                <p>Anyone can coordinate tasks but we represent people. Our job isn't simply to complete a project — it's to protect your interests while we do it.</p>
+                <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step reveal-right delay-1">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>A dedicated point person.</h3>
+                        <p>You get one representative assigned to your project from start to finish — not a call centre.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step reveal-right delay-2">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Weekly reporting.</h3>
+                        <p>Photos, videos (where needed), and written updates so you always know exactly where things stand.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step reveal-right delay-3">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Approvals before spending.</h3>
+                        <p>Nothing significant moves without your explicit sign-off.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step reveal-right delay-4">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Documented accountability.</h3>
+                        <p>Every expense recorded, every receipt kept, every decision explained.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step reveal-right delay-1">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>A final report.</h3>
+                        <p>A clear close-out summary provided to you once the work is completely done.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="diff-list reveal">
-          <div class="diff-item"><span class="diff-mark">01</span><p>We represent your interests, not the vendor's, the contractor's, or anyone else's.</p></div>
-          <div class="diff-item"><span class="diff-mark">02</span><p>Every recommendation comes with full transparency — no hidden markups, no vague explanations.</p></div>
-          <div class="diff-item"><span class="diff-mark">03</span><p>We communicate proactively, before you have to ask.</p></div>
-          <div class="diff-item"><span class="diff-mark">04</span><p>Every critical stage is documented — receipts, photos, video, written updates.</p></div>
-          <div class="diff-item" style="grid-column:1/-1; max-width:600px;"><span class="diff-mark">05</span><p>We believe trust is built through consistency, not promises.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="process" id="how-it-works">
-    <div class="wrap">
-      <div class="process-head reveal">
-        <p class="eyebrow eyebrow-green"><span class="eyebrow-dash"></span>05 — How It Works</p>
-        <h2>Five steps. Nothing left to guesswork.</h2>
-      </div>
-      <div class="process-list">
-        <div class="process-item reveal">
-          <div class="process-num">1</div>
-          <div class="process-body">
-            <h3>A dedicated point person</h3>
-            <p>You get one representative assigned to your project from start to finish — not a call centre.</p>
-          </div>
+    <!-- Dark Banner Section -->
+    <section class="dark-banner section-padding">
+        <div class="container banner-grid">
+            <div class="banner-content reveal-left">
+                <span class="subtitle">The Stevorra Promise</span>
+                <h2>Dedicated to representing your interests every single day.</h2>
+                <p>Because what matters most isn't just getting things done. It's knowing they were done right. We treat every project, property, and naira entrusted to us as though it were our own.</p>
+                <a href="case-study.html" class="btn btn-outline-light">Read Our Case Studies</a>
+            </div>
+            <div class="banner-stats-img reveal-right">
+                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80" alt="Trust, accountability, and professional representation">
+                <div class="floating-stat">
+                    <h4>0%</h4>
+                    <p>Hidden Markups</p>
+                </div>
+            </div>
         </div>
-        <div class="process-item reveal">
-          <div class="process-num">2</div>
-          <div class="process-body">
-            <h3>Weekly reporting</h3>
-            <p>Photos, videos (where needed), and written updates so you always know exactly where things stand.</p>
-          </div>
+    </section>
+     <!-- Section 5: Contact Form -->
+    <section class="contact-section section-padding">
+        <div class="container contact-grid">
+            <div class="contact-image reveal-left">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80" alt="Professional consultation and business strategy" style="height: 100%; object-fit: cover;">
+            </div>
+            <div class="form-container reveal-right">
+                <span class="subtitle">Let's Talk Business</span>
+                <h2>Start building your next success story</h2>
+                <p style="margin-bottom: 2rem;">Tell us what you need represented, and we'll get back to you to scope it out — no obligation, no pressure.</p>
+                
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Subject / What do you need represented?">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Message details..."></textarea>
+                    </div>
+                    <button type="button" class="btn btn-outline-light" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
         </div>
-        <div class="process-item reveal">
-          <div class="process-num">3</div>
-          <div class="process-body">
-            <h3>Approvals before spending</h3>
-            <p>Nothing significant moves without your sign-off.</p>
-          </div>
-        </div>
-        <div class="process-item reveal">
-          <div class="process-num">4</div>
-          <div class="process-body">
-            <h3>Documented accountability</h3>
-            <p>Every expense recorded, every receipt kept, every decision explained.</p>
-          </div>
-        </div>
-        <div class="process-item reveal">
-          <div class="process-num">5</div>
-          <div class="process-body">
-            <h3>A final report</h3>
-            <p>A clear close-out summary once the work is done.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="whyus">
-    <div class="wrap">
-      <div class="whyus-inner">
-        <div class="lc-label reveal">
-          <p class="eyebrow eyebrow-gold">06 — Why Choose Us</p>
-          <div class="lc-rule" style="background:var(--gold);"></div>
+    <!-- Pre-Footer -->
+    <section class="pre-footer">
+        <div class="container pre-footer-content reveal">
+            <h2>Ready To Accelerate Your Project Execution?</h2>
+            <a href="contact.html" class="btn btn-outline-light">Book a Consultation</a>
         </div>
-        <p class="reveal">Anyone can coordinate tasks but we represent people. Our job isn't simply to complete a project — it's to protect your interests while we do it. That means asking better questions, documenting every stage, and acting with the same care we'd want if the situation were reversed.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="cta-final reg-frame" id="book">
-    <div class="reg-mark tl"></div>
-    <div class="reg-mark tr"></div>
-    <div class="reg-mark bl"></div>
-    <div class="reg-mark br"></div>
-    <div class="wrap">
-      <div class="cta-final-inner reveal">
-        <p class="eyebrow eyebrow-gold" style="justify-content:center; display:flex;">Ready When You Are</p>
-        <h2 style="margin-top:20px;">Ready to have someone you can trust on the ground?</h2>
-        <p>Book a consultation and let's talk about what you need represented.</p>
-        <a href="mailto:hello.stevorra.com@gmail.com?subject=Consultation%20Request" class="btn btn-primary">Book a Consultation</a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">
-          <img src="images/logo.png" alt="Stevorra">
-          <span>STEVORRA</span>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo reveal delay-1">
+                    <img src="Images/logo2.png" alt="Stevorra logo" class="footer-brand-logo">
+                    <p>Africa's Premium Representation & Stewardship Company built on trust, discretion, and execution.</p>
+                </div>
+                <div class="footer-col reveal delay-2">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="case-study.html">Case Study</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col reveal delay-3">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Procurement</a></li>
+                        <li><a href="services.html">Verify</a></li>
+                        <li><a href="services.html">Corporate</a></li>
+                        <li><a href="services.html">Property</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col reveal delay-4">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-phone"></i> 07031258899</li>
+                        <li><i class="fa-solid fa-envelope"></i> hello.stevorra.com@gmail.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Lagos, Nigeria</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom reveal">
+                <p>&copy; 2024 Stevorra. All rights reserved. | WE REPRESENT. WE PROTECT. WE DELIVER.</p>
+            </div>
         </div>
-        <p class="footer-tagline">Your Trusted Representative. Premium representation and stewardship for executives, diaspora families, and organizations across Nigeria.</p>
-        <p class="footer-values">Discretion · Integrity · Stewardship<br>Transparency · Accountability · Excellence</p>
-      </div>
-      <div class="footer-col">
-        <h4>Navigate</h4>
-        <a href="#top">Home</a>
-        <a href="#about-placeholder">About</a>
-        <a href="#services">Services</a>
-        <a href="#book">Contact</a>
-      </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <p>Procurement</p>
-        <p>Verify</p>
-        <p>Corporate</p>
-        <p>Property</p>
-      </div>
-      <div class="footer-col">
-        <h4>Get in Touch</h4>
-        <a href="tel:+2347031258899">0703 125 8899</a>
-        <a href="mailto:hello.stevorra.com@gmail.com">hello.stevorra.com@gmail.com</a>
-        <p>Nigeria</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span id="footerYear">© 2026 Stevorra. All rights reserved.</span>
-      <span>Your Trusted Representative</span>
-    </div>
-  </div>
-</footer>
+    </footer>
 
-<script src="index.js"></script>
+    <!-- Intersection Observer JS for Smooth Scroll Animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const heroSlides = document.querySelectorAll('.hero-slide');
+            const heroDots = document.querySelectorAll('.hero-slider-dots button');
+
+            if (heroSlides.length) {
+                let currentSlide = 0;
+
+                const showSlide = (index) => {
+                    heroSlides.forEach((slide, i) => {
+                        slide.classList.toggle('active', i === index);
+                    });
+
+                    heroDots.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === index);
+                    });
+                };
+
+                heroDots.forEach(dot => {
+                    dot.addEventListener('click', () => {
+                        currentSlide = Number(dot.dataset.slide);
+                        showSlide(currentSlide);
+                    });
+                });
+
+                setInterval(() => {
+                    currentSlide = (currentSlide + 1) % heroSlides.length;
+                    showSlide(currentSlide);
+                }, 4500);
+            }
+
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', () => {
+                    const isOpen = navLinks.classList.toggle('open');
+                    menuToggle.setAttribute('aria-expanded', String(isOpen));
+                });
+
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('open');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            const animatedElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
 </body>
 </html>

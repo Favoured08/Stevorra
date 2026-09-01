@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Stevorra</title>
+    
+    <!-- Google Fonts: Strictly Cormorant Garamond & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="css/contact.css">
+     <link rel="icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-location">
+                <i class="fa-solid fa-location-dot"></i> Lagos, Nigeria
+            </div>
+            <div class="top-bar-contact">
+                <span><i class="fa-solid fa-envelope"></i> hello.stevorra.com@gmail.com</span>
+                <span><i class="fa-solid fa-phone"></i> 07031258899</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="Stevorra home">
+                <img src="Images/logo2.png" alt="Stevorra logo" class="brand-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="case-study.html">Case Study</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="mobile-menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container reveal">
+            <h1>Contact Us</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> &nbsp; / &nbsp; Contact
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Split Section -->
+    <div class="contact-page-wrapper">
+        <div class="container">
+            <div class="contact-page-grid">
+                
+                <!-- Left: Image -->
+                <div class="contact-image-wrap reveal-left">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80" alt="Professional consultation and business strategy">
+                </div>
+
+                <!-- Right: Form -->
+                <div class="contact-form-wrap reveal-right">
+                    <span class="subtitle">Let's Talk Business</span>
+                    <h2>Start building your next success story</h2>
+                    <p>Tell us what you need represented, and we'll get back to you to scope it out — no obligation, no pressure.</p>
+
+                    <form action="#" method="POST" class="contact-form">
+                        
+                        <!-- 2-Column Inputs -->
+                        <div class="form-row">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+
+                        <!-- Full Width Textarea -->
+                        <textarea class="form-control" placeholder="What do you need represented? Please provide details..." required></textarea>
+
+                        <!-- Footer / Checkbox / Button -->
+                        <div class="form-footer">
+                            <label class="checkbox-wrap">
+                                <input type="checkbox" required>
+                                <span>I agree to the terms and privacy policy.</span>
+                            </label>
+                            
+                            <button type="button" class="btn btn-outline-light">Send Message</button>
+                        </div>
+                    </form>
+                    
+                    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                        <ul class="contact-info-list">
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <strong style="color: var(--champagne-gold); display: block; font-family: var(--font-heading); font-size: 1.2rem;">Office Location</strong>
+                                    Lagos, Nigeria
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <strong style="color: var(--champagne-gold); display: block; font-family: var(--font-heading); font-size: 1.2rem;">Phone Number</strong>
+                                    07031258899
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <strong style="color: var(--champagne-gold); display: block; font-family: var(--font-heading); font-size: 1.2rem;">Email Address</strong>
+                                    hello.stevorra.com@gmail.com
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Full Width Map Section -->
+    <section class="map-section reveal">
+        <!-- Google Map iframe centered on Lagos, Nigeria (Location per Brand Board) -->
+        <iframe 
+            src="https://www.openstreetmap.org/export/embed.html?bbox=3.236%2C6.327%2C3.668%2C6.77&layer=mapnik&marker=6.5244%2C3.3792" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <!-- Pre-Footer CTA -->
+    <section class="pre-footer">
+        <div class="container pre-footer-content reveal">
+            <h2>Ready To Accelerate Your Project Execution?</h2>
+            <a href="contact.html" class="btn btn-outline-light">Book a Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo reveal delay-1">
+                    <img src="Images/logo2.png" alt="Stevorra logo" class="footer-brand-logo">
+                    <p>Africa's Premium Representation & Stewardship Company built on trust, discretion, and execution.</p>
+                </div>
+                <div class="footer-col reveal delay-2">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="case-study.html">Case Study</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col reveal delay-3">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#procurement">Procurement</a></li>
+                        <li><a href="services.html#verify">Verify</a></li>
+                        <li><a href="services.html#corporate">Corporate</a></li>
+                        <li><a href="services.html#property">Property</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col reveal delay-4">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-phone"></i> 07031258899</li>
+                        <li><i class="fa-solid fa-envelope"></i> hello.stevorra.com@gmail.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Lagos, Nigeria</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom reveal">
+                <p>&copy; 2024 Stevorra. All rights reserved. | WE REPRESENT. WE PROTECT. WE DELIVER.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile navigation and scroll animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', () => {
+                    const isOpen = navLinks.classList.toggle('open');
+                    menuToggle.setAttribute('aria-expanded', String(isOpen));
+                });
+
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('open');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            const animatedElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

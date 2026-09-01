@@ -1,0 +1,314 @@
+/* CSS Variables - STRICTLY from Brand Board */
+        :root {
+            --deep-navy: #0F2747;
+            --forest-green: #1F5A44;
+            --ivory: #F7F5F2;
+            --champagne-gold: #CBA96A;
+            --charcoal: #1A1A1A;
+            --white: #FFFFFF;
+            
+            --font-heading: 'Cormorant Garamond', serif;
+            --font-body: 'Inter', sans-serif;
+            
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--charcoal);
+            background-color: var(--ivory);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            color: var(--deep-navy);
+            line-height: 1.2;
+            font-weight: 600;
+        }
+
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        img { max-width: 100%; height: auto; display: block; }
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+        /* Scroll Animations */
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); }
+        .reveal-left { opacity: 0; transform: translateX(-40px); transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); }
+        .reveal-right { opacity: 0; transform: translateX(40px); transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); }
+        .reveal.active, .reveal-left.active, .reveal-right.active { opacity: 1; transform: translate(0, 0); }
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 14px 32px; font-family: var(--font-body); font-weight: 500; font-size: 0.95rem;
+            letter-spacing: 0.5px; cursor: pointer; transition: var(--transition); border: 1px solid transparent;
+        }
+        .btn-primary { background-color: var(--deep-navy); color: var(--champagne-gold); border-color: var(--champagne-gold); }
+        .btn-primary:hover { background-color: var(--forest-green); color: var(--ivory); border-color: var(--forest-green); }
+        .btn-outline-light { background-color: transparent; color: var(--champagne-gold); border-color: var(--champagne-gold); }
+        .btn-outline-light:hover { background-color: var(--champagne-gold); color: var(--deep-navy); }
+
+        /* Shared Section padding */
+        .section-padding { padding: 7rem 0; }
+        .subtitle {
+            color: var(--champagne-gold); font-weight: 600; text-transform: uppercase;
+            letter-spacing: 1.5px; font-size: 0.85rem; margin-bottom: 10px; display: block;
+        }
+
+        /* Top Bar */
+        .top-bar { background-color: var(--charcoal); color: var(--ivory); padding: 8px 0; font-size: 0.85rem; }
+        .top-bar .container { display: flex; justify-content: space-between; align-items: center; }
+        .top-bar-contact { display: flex; gap: 20px; }
+        .top-bar-contact i { color: var(--champagne-gold); margin-right: 5px; }
+
+        /* Navigation */
+        .navbar {
+            background-color: var(--white); padding: 15px 0; position: sticky; top: 0;
+            z-index: 1000; box-shadow: 0 4px 20px rgba(15, 39, 71, 0.05);
+        }
+        .navbar .container { display: flex; justify-content: space-between; align-items: center; }
+        .navbar-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .mobile-menu-toggle {
+            display: none;
+            border: 1px solid rgba(15, 39, 71, 0.15);
+            background: var(--ivory);
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+            transition: var(--transition);
+        }
+        .mobile-menu-toggle span {
+            width: 20px;
+            height: 2px;
+            background: var(--deep-navy);
+            border-radius: 2px;
+            display: block;
+            transition: var(--transition);
+        }
+        .mobile-menu-toggle[aria-expanded="true"] span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+        .mobile-menu-toggle[aria-expanded="true"] span:nth-child(2) {
+            opacity: 0;
+        }
+        .mobile-menu-toggle[aria-expanded="true"] span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+        .logo { display: flex; flex-direction: column; text-align: center; }
+        .logo-main { font-family: var(--font-heading); font-size: 2.2rem; color: var(--deep-navy); font-weight: 700; letter-spacing: 2px; line-height: 1; }
+        .logo-sub { font-family: var(--font-body); font-size: 0.6rem; color: var(--champagne-gold); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 4px; font-weight: 500; }
+        .nav-links { display: flex; gap: 30px; list-style: none; align-items: center; }
+        .nav-links a { font-size: 0.95rem; font-weight: 500; color: var(--deep-navy); text-transform: uppercase; letter-spacing: 0.5px; }
+        .nav-links a:hover, .nav-links a.active { color: var(--forest-green); }
+
+        /* Page Header */
+        .page-header {
+            background-color: var(--ivory);
+            padding: 4rem 0 1rem 0;
+            border-bottom: 1px solid rgba(15, 39, 71, 0.1);
+        }
+        .page-header h1 { font-size: 3.5rem; margin-bottom: 0.5rem; }
+        .breadcrumbs { font-size: 0.9rem; color: rgba(26,26,26,0.6); }
+        .breadcrumbs a { color: var(--champagne-gold); font-weight: 500; }
+
+        /* Section 1: Why We Exist (Split Layout from Inspiration) */
+        .exist-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+        .exist-content h2 { font-size: 3rem; margin-bottom: 1.5rem; line-height: 1.1; }
+        .exist-content > p { font-size: 1.1rem; color: rgba(26,26,26,0.8); margin-bottom: 2rem; }
+        
+        .exist-list { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 3rem; }
+        .exist-list li { display: flex; align-items: center; font-size: 0.95rem; font-weight: 500; color: var(--deep-navy); }
+        .exist-list i { color: var(--champagne-gold); margin-right: 10px; font-size: 1.1rem; }
+
+        .exist-image-wrap { position: relative; }
+        .exist-image-wrap img {
+            border-radius: 2px;
+            width: 100%;
+            height: 620px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        /* Overlapping Quote Box */
+        .quote-box {
+            position: absolute; bottom: 28px; left: -40px;
+            background-color: var(--deep-navy); color: var(--ivory);
+            padding: 2rem; width: 300px;
+            border-top: 4px solid var(--champagne-gold);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        .quote-box i { font-size: 2rem; color: var(--champagne-gold); margin-bottom: 15px; opacity: 0.5; }
+        .quote-box p { font-size: 1rem; font-weight: 300; line-height: 1.5; margin-bottom: 15px; }
+        .quote-box h5 { color: var(--champagne-gold); font-family: var(--font-body); font-size: 0.9rem; }
+
+        /* Section 2: Built on Experience (Timeline & Mission Overlap) */
+        .story-section { background-color: var(--white); text-align: center; }
+        .story-header { max-width: 800px; margin: 0 auto 4rem auto; }
+        .story-header h2 { font-size: 3rem; margin-bottom: 1rem; }
+        
+        .timeline-horizontal {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;
+            text-align: left; margin-bottom: 6rem; position: relative;
+        }
+        .timeline-horizontal::before {
+            content: ''; position: absolute; top: 15px; left: 0; width: 100%;
+            height: 1px; background-color: rgba(15, 39, 71, 0.1); z-index: 1;
+        }
+        .timeline-item { position: relative; z-index: 2; padding-top: 40px; }
+        .timeline-item::before {
+            content: ''; position: absolute; top: 9px; left: 0;
+            width: 12px; height: 12px; border-radius: 50%;
+            background-color: var(--champagne-gold); border: 3px solid var(--white);
+        }
+        .timeline-year { font-family: var(--font-heading); font-size: 2rem; color: var(--deep-navy); line-height: 1; margin-bottom: 10px; }
+        .timeline-item h4 { font-size: 1.1rem; color: var(--forest-green); margin-bottom: 10px; }
+        .timeline-item p { font-size: 0.9rem; color: rgba(26,26,26,0.7); }
+
+        /* Mission / Vision Overlap Box */
+        .mission-vision-wrapper {
+            position: relative; display: flex; align-items: flex-end;
+            margin-top: 3rem;
+        }
+        .mission-vision-img { width: 65%; border-radius: 2px; }
+        .mission-vision-cards {
+            position: absolute; right: 0; bottom: -30px; width: 45%;
+            display: flex; flex-direction: column; gap: 15px;
+        }
+        .mv-card { padding: 2.5rem; text-align: left; }
+        .mv-card h3 { color: var(--champagne-gold); font-size: 2rem; margin-bottom: 15px; }
+        .mv-card p { color: rgba(247, 245, 242, 0.85); font-size: 0.95rem; }
+        .bg-navy { background-color: var(--deep-navy); }
+        .bg-green { background-color: var(--forest-green); }
+
+        /* Section 3: Leadership Philosophy (Dark Section) */
+        .dark-banner {
+            background-color: var(--deep-navy); color: var(--ivory);
+            margin-top: 5rem; border-top: 2px solid var(--champagne-gold);
+        }
+        .banner-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+        .dark-banner h2 { color: var(--ivory); font-size: 3rem; margin-bottom: 1.5rem; }
+        .dark-banner p { color: rgba(247, 245, 242, 0.85); font-size: 1.05rem; margin-bottom: 2rem; font-weight: 300; }
+        
+        .banner-stats-img { position: relative; }
+        .banner-stats-img img { border-radius: 2px; }
+        
+        .floating-stats-group {
+            position: absolute; bottom: -30px; left: -40px;
+            display: flex; gap: 15px;
+        }
+        .stat-box { padding: 2rem; min-width: 180px; }
+        .stat-box h4 { font-size: 2.5rem; margin-bottom: 5px; color: var(--ivory); }
+        .stat-box p { font-size: 0.9rem; margin: 0; color: rgba(247,245,242,0.8); text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Section 4: Core Values (3 Column Grid) */
+        .values-section { background-color: var(--ivory); text-align: center; }
+        .values-header { max-width: 700px; margin: 0 auto 3rem auto; }
+        .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        
+        .value-card { background: var(--white); border: 1px solid rgba(15, 39, 71, 0.05); text-align: left; }
+        .value-img { height: 250px; }
+        .value-img img { width: 100%; height: 100%; object-fit: cover; }
+        .value-content { padding: 2rem; }
+        .value-content h3 { font-size: 1.8rem; color: var(--deep-navy); margin-bottom: 10px; }
+        .value-content p { color: rgba(26, 26, 26, 0.75); font-size: 0.95rem; }
+
+        /* Section 5: Contact Form */
+        .contact-section { background-color: var(--white); }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+        .form-container { background: var(--forest-green); color: var(--ivory); padding: 4rem 3rem; border-top: 4px solid var(--champagne-gold); }
+        .form-container h2 { color: var(--ivory); font-size: 2.8rem; margin-bottom: 0.5rem; }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-control { width: 100%; padding: 15px; border: 1px solid rgba(247, 245, 242, 0.2); font-family: var(--font-body); background: rgba(255, 255, 255, 0.05); color: var(--ivory); transition: var(--transition); }
+        .form-control::placeholder { color: rgba(247, 245, 242, 0.5); }
+        .form-control:focus { outline: none; border-color: var(--champagne-gold); background: rgba(255, 255, 255, 0.1); }
+        textarea.form-control { height: 120px; resize: none; }
+
+        /* Pre-Footer CTA */
+        .pre-footer { background-color: var(--forest-green); padding: 5rem 0; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .pre-footer-content { display: flex; justify-content: space-between; align-items: center; }
+        .pre-footer h2 { color: var(--ivory); margin: 0; font-size: 2.5rem; }
+
+        /* Footer */
+        .footer { background-color: var(--deep-navy); color: var(--ivory); padding: 6rem 0 2rem 0; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 3rem; margin-bottom: 4rem; }
+        .footer-logo .logo-main { color: var(--champagne-gold); }
+        .footer-logo p { margin-top: 1.5rem; color: rgba(247, 245, 242, 0.6); font-size: 0.95rem; max-width: 300px; font-weight: 300; }
+        .footer-col h4 { color: var(--ivory); font-size: 1.2rem; margin-bottom: 1.5rem; letter-spacing: 0.5px; }
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: 12px; }
+        .footer-links a { color: rgba(247, 245, 242, 0.6); font-size: 0.95rem; transition: var(--transition); }
+        .footer-links a:hover { color: var(--champagne-gold); padding-left: 5px; }
+        .footer-contact li { display: flex; align-items: center; color: rgba(247, 245, 242, 0.6); margin-bottom: 12px; font-size: 0.95rem; }
+        .footer-contact i { color: var(--champagne-gold); margin-right: 15px; font-size: 1.1rem; }
+        .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(203, 169, 106, 0.2); color: rgba(247, 245, 242, 0.4); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .exist-grid, .banner-grid, .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .timeline-horizontal { grid-template-columns: 1fr; }
+            .timeline-horizontal::before { display: none; }
+            .timeline-item { padding-top: 0; padding-left: 30px; border-left: 1px solid rgba(15,39,71,0.1); padding-bottom: 30px; }
+            .timeline-item::before { top: 5px; left: -7px; }
+            .mission-vision-wrapper { flex-direction: column; }
+            .mission-vision-img { width: 100%; margin-bottom: -20px; }
+            .mission-vision-cards { position: relative; width: 90%; margin: 0 auto; bottom: 0; }
+            .values-grid { grid-template-columns: 1fr; }
+            .quote-box, .floating-stats-group { position: relative; bottom: 0; left: 0; width: 100%; margin-top: -30px; }
+            .floating-stats-group { flex-direction: column; gap: 0; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .pre-footer-content { flex-direction: column; gap: 20px; text-align: center; }
+        }
+        @media (max-width: 768px) {
+            .navbar .container {
+                position: relative;
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+            .logo-main { font-size: 1.7rem; }
+            .navbar-actions {
+                margin-left: auto;
+            }
+            .mobile-menu-toggle {
+                display: inline-flex;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                padding: 1rem 1.25rem 1.25rem;
+                background: var(--white);
+                border-top: 1px solid rgba(15, 39, 71, 0.08);
+                box-shadow: 0 12px 25px rgba(15, 39, 71, 0.08);
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .nav-links a {
+                width: 100%;
+                padding: 0.25rem 0;
+            }
+            .navbar .btn.btn-primary {
+                display: none;
+            }
+            .footer-grid { grid-template-columns: 1fr; }
+            .top-bar-contact { display: none; }
+            .exist-list { grid-template-columns: 1fr; }
+        }
