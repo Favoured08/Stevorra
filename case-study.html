@@ -12,7 +12,7 @@
     
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/Styles.css">
 
     <link rel="icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/case-study.css">
@@ -36,7 +36,10 @@
     <header class="navbar">
         <div class="container">
             <a href="index.html" class="logo" aria-label="Stevorra home">
-                <img src="images/logo2.png" alt="Stevorra logo" class="brand-logo">
+                <span class="brand-lockup">
+                    <img src="images/logo.png" alt="" class="brand-mark">
+                    <span class="brand-wordmark">Stevorra</span>
+                </span>
             </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -63,123 +66,842 @@
             <div class="breadcrumbs">
                 <a href="index.html">Home</a> &nbsp; / &nbsp; Case Studies
             </div>
+            <div class="founder-note reveal">
+                <i class="fas fa-info-circle"></i>
+                <p><strong>A Note on These Cases:</strong> These engagements reflect our founder's direct experience before Stevorra's formal launch. They demonstrate the same standard of trust, discretion, and execution that defines Stevorra today.</p>
+            </div>
         </div>
     </div>
 
-    <!-- Interactive Case Study Section (Based on Video Inspiration) -->
-    <section class="interactive-section section-padding">
+    <!-- Aggregate Stats Banner -->
+    <section class="stats-banner">
+        <div class="container">
+            <div class="stats-banner-inner reveal">
+                <div class="stats-banner-item">
+                    <span class="stats-banner-value">3</span>
+                    <span class="stats-banner-label">Engagements Delivered</span>
+                </div>
+                <div class="stats-banner-divider"></div>
+                <div class="stats-banner-item">
+                    <span class="stats-banner-value">₦500k+</span>
+                    <span class="stats-banner-label">Funds Managed</span>
+                </div>
+                <div class="stats-banner-divider"></div>
+                <div class="stats-banner-item">
+                    <span class="stats-banner-value">100%</span>
+                    <span class="stats-banner-label">Accountability Record</span>
+                </div>
+                <div class="stats-banner-divider"></div>
+                <div class="stats-banner-item">
+                    <span class="stats-banner-value">200+</span>
+                    <span class="stats-banner-label">People Served</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proven Results Section -->
+    <section class="case-study-showcase" id="proven-results">
         <div class="container">
             <div class="interactive-header reveal">
                 <span class="subtitle">Proven Results</span>
-                <h2>Strategies that create lasting impact.</h2>
-                <p>See how our tailored representation and execution solutions empower individuals and organizations to overcome distance and achieve their goals.</p>
+                <h2>Proven Results. Real Accountability.</h2>
+                <p>See how Stevorra has protected client interests and delivered results — with complete transparency and discretion.</p>
             </div>
 
-            <div class="interactive-grid">
+            <!-- Case Study Selector -->
+            <div class="case-selector-wrapper reveal delay-1">
+                <span class="case-selector-label">Select Case Study</span>
+                <div class="case-selector-bar" role="tablist" aria-label="Select Case Study">
+                    <button class="case-selector-btn active" data-case="case1" role="tab" aria-selected="true">
+                        <span class="case-index">01</span>
+                        <span>Executive Support</span>
+                    </button>
+                    <button class="case-selector-btn" data-case="case2" role="tab" aria-selected="false">
+                        <span class="case-index">02</span>
+                        <span>Confidential Representation</span>
+                    </button>
+                    <button class="case-selector-btn" data-case="case3" role="tab" aria-selected="false">
+                        <span class="case-index">03</span>
+                        <span>Large-Scale Event Operations</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Master Presentation Frame -->
+            <div class="presentation-deck-card reveal delay-2">
                 
-                <!-- Left: Tabs -->
-                <div class="tabs-container reveal-left delay-1">
-                    <ul class="case-tabs">
-                        <li>
-                            <button class="tab-btn active" data-target="case1">
-                                Executive Support — UK Leader
+                <!-- Case Framework Header -->
+                <div class="presentation-template-header">
+                    <div class="presentation-header-top">
+                        <div class="presentation-meta-badge">
+                            <span class="framework-dot"></span>
+                            <span class="presentation-eyebrow">5-Stage Execution Framework</span>
+                        </div>
+                        <div class="presentation-view-toggles" role="group" aria-label="View Mode">
+                            <button class="view-mode-btn active" data-mode="deck" type="button" aria-pressed="true">
+                                <i class="fa-solid fa-layer-group"></i> Slide Deck
                             </button>
-                        </li>
-                        <li>
-                            <button class="tab-btn" data-target="case2">
-                                Confidential Representation
+                            <button class="view-mode-btn" data-mode="expanded" type="button" aria-pressed="false">
+                                <i class="fa-solid fa-bars-staggered"></i> Full Story
                             </button>
-                        </li>
-                        <li>
-                            <button class="tab-btn" data-target="case3">
-                                Large-Scale Event Operations
-                            </button>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+
+                    <!-- 5-Stage Navigation (CONTEXT, PROBLEM, PROCESS, SOLUTION, TAKEAWAY) -->
+                    <div class="presentation-nav" role="tablist" aria-label="Presentation Stages">
+                        <button class="stage-nav-item active" data-stage="context" role="tab" aria-selected="true" title="Jump to Context">
+                            <span class="stage-label">CONTEXT</span>
+                            <span class="stage-bar"></span>
+                        </button>
+                        <button class="stage-nav-item" data-stage="problem" role="tab" aria-selected="false" title="Jump to Problem">
+                            <span class="stage-label">PROBLEM</span>
+                            <span class="stage-bar"></span>
+                        </button>
+                        <button class="stage-nav-item" data-stage="process" role="tab" aria-selected="false" title="Jump to Process">
+                            <span class="stage-label">PROCESS</span>
+                            <span class="stage-bar"></span>
+                        </button>
+                        <button class="stage-nav-item" data-stage="solution" role="tab" aria-selected="false" title="Jump to Solution">
+                            <span class="stage-label">SOLUTION</span>
+                            <span class="stage-bar"></span>
+                        </button>
+                        <button class="stage-nav-item" data-stage="takeaway" role="tab" aria-selected="false" title="Jump to Takeaway">
+                            <span class="stage-label">TAKEAWAY</span>
+                            <span class="stage-bar"></span>
+                        </button>
+                    </div>
                 </div>
 
-                <!-- Right: Content Panels -->
-                <div class="case-content-container reveal-right delay-2">
-                    
-                    <!-- Case Study 1 -->
-                    <div id="case1" class="case-panel active">
-                        <div class="panel-inner">
-                            <div class="panel-image">
-                                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=700&q=80" alt="Executive Support and project coordination">
-                            </div>
-                            <div class="panel-text">
-                                <div class="panel-number">01</div>
-                                <h3>Executive Support</h3>
+                <!-- ==================== CASE 01 ==================== -->
+                <article id="case1" class="case-deck-panel active" role="tabpanel" aria-label="Executive Support Case Study">
+                    <div class="case-meta-header">
+                        <div>
+                            <span class="service-tag">Case 01</span>
+                            <h2><i class="fa-solid fa-briefcase"></i> Executive Support</h2>
+                        </div>
+                    </div>
+
+                    <!-- Stage 1: CONTEXT -->
+                    <div class="stage-panel active" data-stage="context">
+                        <div class="stage-header-badge">
+                            <span class="stage-badge-number">STAGE 01</span>
+                            <span class="stage-badge-dot"></span>
+                            <span class="stage-badge-name">CONTEXT</span>
+                        </div>
+                        <div class="stage-grid">
+                            <div class="stage-content-main">
+                                <h4 class="stage-headline">When distance was slowing three businesses down.</h4>
+                                <p class="stage-lead-text">A UK-based executive needed trusted ground support while running three businesses in Nigeria across different time zones.</p>
                                 
-                                <div class="case-detail-block">
-                                    <h4>The Challenge</h4>
-                                    <p>A business executive based in the UK, running three separate businesses at once, needed hands-on support executing tasks in Nigeria — but had no one she trusted enough to hand things to.</p>
+                                <div class="client-profile-box">
+                                    <div class="profile-item">
+                                        <i class="fas fa-user-tie"></i>
+                                        <div>
+                                            <strong>Client</strong>
+                                            <span>UK-Based Business Executive</span>
+                                        </div>
+                                    </div>
+                                    <div class="profile-item">
+                                        <i class="fas fa-clock"></i>
+                                        <div>
+                                            <strong>Timeline</strong>
+                                            <span>2-Week Intensive Engagement</span>
+                                        </div>
+                                    </div>
+                                    <div class="profile-item">
+                                        <i class="fas fa-chart-line"></i>
+                                        <div>
+                                            <strong>Scale</strong>
+                                            <span>3 Businesses Across Time Zones</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="case-detail-block">
-                                    <h4>Our Approach & Execution</h4>
-                                    <p>Stepped in as a dedicated executive assistant for a two-week engagement. Coordinated outstanding tasks, managed communication with vendors, and kept her updated for quick decisions despite time differences.</p>
+                                <p class="stage-body-text">Running multi-sector commercial entities from abroad creates significant operational friction. When vendors wait days for feedback and local staff lack decisive direction, business momentum quickly grinds to a halt.</p>
+                            </div>
+                            <div class="stage-visual-box">
+                                <div class="visual-placeholder vp-executive">
+                                    <i class="fa-solid fa-briefcase vp-icon"></i>
+                                    <span class="vp-label">Executive Support</span>
+                                    <span class="vp-tagline">Trusted ground representation for remote decision-makers</span>
                                 </div>
-                                <div class="case-detail-block">
-                                    <h4>The Outcome</h4>
-                                    <p>Her businesses in Nigeria were established and operating. Momentum that had been stalled by distance was fully restored.</p>
+                                <div class="image-badge"><i class="fa-solid fa-circle-check"></i> Built for decisive leadership.</div>
+                                <div class="floating-stats-card">
+                                    <div class="stat">
+                                        <strong>3</strong>
+                                        <span>Businesses</span>
+                                    </div>
+                                    <div class="stat">
+                                        <strong>2</strong>
+                                        <span>Weeks</span>
+                                    </div>
+                                    <div class="stat">
+                                        <strong>47</strong>
+                                        <span>Tasks</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Case Study 2 -->
-                    <div id="case2" class="case-panel">
-                        <div class="panel-inner">
-                            <div class="panel-image">
-                                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=700&q=80" alt="Confidential representation and trust">
-                            </div>
-                            <div class="panel-text">
-                                <div class="panel-number">02</div>
-                                <h3>Confidential Representation</h3>
+                    <!-- Stage 2: PROBLEM -->
+                    <div class="stage-panel" data-stage="problem">
+                        <div class="stage-header-badge">
+                            <span class="stage-badge-number">STAGE 02</span>
+                            <span class="stage-badge-dot"></span>
+                            <span class="stage-badge-name">PROBLEM</span>
+                        </div>
+                        <div class="stage-grid">
+                            <div class="stage-content-main">
+                                <h4 class="stage-headline">The Challenge: Compounding Delays and No Trusted Ground Presence</h4>
+                                <p class="stage-lead-text">A UK-based executive was running three separate businesses in Nigeria while living abroad. She had tasks piling up, vendors waiting for responses, and operational momentum stalling — but no one on the ground she trusted enough to hand things to.</p>
+                                <p class="stage-body-text">The difficulty was not simply checking off minor items. It was finding a representative with the competence, discretion, and executive presence to engage suppliers, resolve bottlenecks, and act in her exact interest.</p>
                                 
-                                <div class="case-detail-block">
-                                    <h4>The Challenge</h4>
-                                    <p>A client living abroad needed to travel home for a family event, but for personal reasons did not want relatives to know. She needed someone she could trust with complete discretion and financial accountability.</p>
+                                <div class="obstacle-cards-grid">
+                                    <div class="obstacle-card">
+                                        <i class="fa-solid fa-hourglass-half"></i>
+                                        <div>
+                                            <strong>Time-Zone Paralysis</strong>
+                                            <p>Living abroad created communication gaps where critical queries languished for 24-48 hours before review.</p>
+                                        </div>
+                                    </div>
+                                    <div class="obstacle-card">
+                                        <i class="fa-solid fa-triangle-exclamation"></i>
+                                        <div>
+                                            <strong>Vendor Non-Compliance</strong>
+                                            <p>Without an authoritative figure inspecting deliveries in person, suppliers repeatedly missed deadlines without consequence.</p>
+                                        </div>
+                                    </div>
+                                    <div class="obstacle-card">
+                                        <i class="fa-solid fa-lock"></i>
+                                        <div>
+                                            <strong>Trust Deficit</strong>
+                                            <p>Prior experiences with unverified intermediaries had left the client hesitant to delegate sensitive operational keys.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="case-detail-block">
-                                    <h4>Our Approach & Execution</h4>
-                                    <p>Took on the role of her on-the-ground representative. Sourced fabrics, coordinated vendors, managed every purchase, and provided ongoing updates—continuing to source items even after she returned abroad.</p>
+                            </div>
+                            <div class="stage-sidebar-card">
+                                <h5><i class="fa-solid fa-shield-halved"></i> What Was at Stake</h5>
+                                <p>Without urgent intervention, upcoming commercial launches risked postponement, contractual penalty clauses, and loss of initial customer trust.</p>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> 3 enterprise launches on hold</li>
+                                    <li><i class="fa-solid fa-check"></i> Key supplier agreements stalling</li>
+                                    <li><i class="fa-solid fa-check"></i> Founder fatigue from remote firefighting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 3: PROCESS -->
+                    <div class="stage-panel" data-stage="process">
+                        <div class="stage-header-badge">
+                            <span class="stage-badge-number">STAGE 03</span>
+                            <span class="stage-badge-dot"></span>
+                            <span class="stage-badge-name">PROCESS</span>
+                        </div>
+                        <div class="stage-grid">
+                            <div class="stage-content-main">
+                                <h4 class="stage-headline">Our Approach: Embedded Representation With Full Mandate</h4>
+                                <p class="stage-lead-text">I stepped in as her dedicated executive assistant for two weeks — not as a contractor checking boxes, but as her representative with full authority to make decisions within her priorities.</p>
+                                
+                                <div class="process-steps-timeline">
+                                    <div class="process-step-item">
+                                        <span class="process-step-pill">Morning</span>
+                                        <div class="process-step-text">
+                                            <strong>Strategic Alignment & Priority Triage</strong>
+                                            <p>Every morning began with a direct review of daily objectives, classifying high-impact deliverables, vendor touchpoints, and urgent requisitions.</p>
+                                        </div>
+                                    </div>
+                                    <div class="process-step-item">
+                                        <span class="process-step-pill">Midday</span>
+                                        <div class="process-step-text">
+                                            <strong>Field Coordination & Real-Time Problem Solving</strong>
+                                            <p>Directly interfacing with vendors on the ground, negotiating contract milestones, inspecting sites, and accelerating execution on site.</p>
+                                        </div>
+                                    </div>
+                                    <div class="process-step-item">
+                                        <span class="process-step-pill">Afternoon</span>
+                                        <div class="process-step-text">
+                                            <strong>Transparent Audit & Photo Documentation</strong>
+                                            <p>Dispatched detailed daily summaries complete with time-stamped photos, receipts, vendor communications, and status updates.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="case-detail-block">
-                                    <h4>The Outcome</h4>
-                                    <p>The visit went exactly as planned, with complete discretion maintained and every expense fully documented and accounted for.</p>
+                            </div>
+                            <div class="stage-sidebar-card">
+                                <h5><i class="fa-solid fa-compass"></i> The Stevorra Protocol</h5>
+                                <p>Direct founder stewardship guarantees absolute accountability. You are never handed off to an assistant or outsourced agency.</p>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> Clear written scope & signed agreements</li>
+                                    <li><i class="fa-solid fa-check"></i> Daily photographic and financial receipts</li>
+                                    <li><i class="fa-solid fa-check"></i> Zero unauthorized deviations from client goals</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 4: SOLUTION -->
+                    <div class="stage-panel" data-stage="solution">
+                        <div class="stage-header-badge">
+                            <span class="stage-badge-number">STAGE 04</span>
+                            <span class="stage-badge-dot"></span>
+                            <span class="stage-badge-name">SOLUTION</span>
+                        </div>
+                        <div class="stage-grid">
+                            <div class="stage-content-main">
+                                <h4 class="stage-headline">Proven Results: 47 Tasks Executed in 14 Days</h4>
+                                <p class="stage-lead-text">Complete operational momentum was restored. By the end of the two-week intensive engagement, all three businesses were established and running smoothly.</p>
+                                
+                                <div class="results-grid">
+                                    <div class="result-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>All three businesses established and operational</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>47 complex tasks completed in 14 days</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Zero communication gaps despite time difference</span>
+                                    </div>
+                                </div>
+                                <p class="stage-body-text">The client was able to maintain peace of mind and strategic focus in the UK while knowing her investments and operations in Nigeria were being stewarded with institutional precision.</p>
+                            </div>
+                            <div class="stage-sidebar-card">
+                                <h5><i class="fa-solid fa-chart-column"></i> Quantified Outcomes</h5>
+                                <p>Delivering measurable business outcomes through high-trust stewardship:</p>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> <strong>3 of 3</strong> businesses fully active</li>
+                                    <li><i class="fa-solid fa-check"></i> <strong>100%</strong> of backlog cleared within 14 days</li>
+                                    <li><i class="fa-solid fa-check"></i> Permanent operational workflows installed</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 5: TAKEAWAY -->
+                    <div class="stage-panel" data-stage="takeaway">
+                        <div class="stage-header-badge">
+                            <span class="stage-badge-number">STAGE 05</span>
+                            <span class="stage-badge-dot"></span>
+                            <span class="stage-badge-name">TAKEAWAY</span>
+                        </div>
+                        <div class="takeaway-featured-box">
+                            <blockquote class="takeaway-quote">
+                                "The right representation doesn't just complete tasks. It creates the clarity and confidence to keep a business moving — even from another continent."
+                            </blockquote>
+                            <div class="takeaway-footer">
+                                <div class="takeaway-attribution">
+                                    <strong>Founder's Principle &bull; Stevorra</strong>
+                                    <span>Drawn from direct founder experience, pre-launch</span>
+                                </div>
+                                <a href="contact.html" class="btn btn-primary">Book Executive Consultation <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage Footer Nav -->
+                    <div class="stage-footer-nav">
+                        <button class="btn-stage-nav btn-stage-prev" type="button" disabled>
+                            <i class="fa-solid fa-arrow-left"></i> <span>Previous Stage</span>
+                        </button>
+                        <div class="stage-counter-badge">
+                            <span>Stage <strong class="current-stage-num">1</strong> of 5</span>
+                        </div>
+                        <button class="btn-stage-nav btn-stage-next" type="button">
+                            <span>Next: Problem</span> <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- ==================== CASE 02 ==================== -->
+                <article id="case2" class="case-deck-panel" role="tabpanel" aria-label="Confidential Representation Case Study">
+                    <div class="case-meta-header">
+                        <div>
+                            <span class="service-tag">Case 02</span>
+                            <h2><i class="fa-solid fa-user-shield"></i> Confidential Representation</h2>
+                        </div>
+                    </div>
+
+                    <!-- Stage 1: CONTEXT -->
+                    <div class="stage-panel active" data-stage="context">
+                        <div class="stage-header-badge">
+                            <span class="stage-badge-number">STAGE 01</span>
+                            <span class="stage-badge-dot"></span>
+                            <span class="stage-badge-name">CONTEXT</span>
+                        </div>
+                        <div class="stage-grid">
+                            <div class="stage-content-main">
+                                <h4 class="stage-headline">When discretion wasn't optional.</h4>
+                                <p class="stage-lead-text">A private client needed trusted, discreet execution while handling sensitive personal commitments from abroad.</p>
+                                
+                                <div class="client-profile-box">
+                                    <div class="profile-item">
+                                        <i class="fas fa-user-tie"></i>
+                                        <div>
+                                            <strong>Client</strong>
+                                            <span>Private Individual Abroad</span>
+                                        </div>
+                                    </div>
+                                    <div class="profile-item">
+                                        <i class="fas fa-clock"></i>
+                                        <div>
+                                            <strong>Timeline</strong>
+                                            <span>Responsive On-Ground Support</span>
+                                        </div>
+                                    </div>
+                                    <div class="profile-item">
+                                        <i class="fas fa-chart-line"></i>
+                                        <div>
+                                            <strong>Scale</strong>
+                                            <span>High-Trust Personal Coordination</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="stage-body-text">Managing personal affairs across borders requires an intermediary who values privacy above all else. In situations involving family, finances, and sensitive local purchases, complete discretion is the bedrock of trust.</p>
+                            </div>
+                            <div class="stage-visual-box">
+                                <div class="visual-placeholder vp-confidential">
+                                    <i class="fa-solid fa-user-shield vp-icon"></i>
+                                    <span class="vp-label">Confidential</span>
+                                    <span class="vp-tagline">Private coordination under absolute discretion</span>
+                                </div>
+                                <div class="image-badge"><i class="fa-solid fa-shield-halved"></i> Discretion built into every step.</div>
+                                <div class="floating-stats-card">
+                                    <div class="stat">
+                                        <strong>100%</strong>
+                                        <span>Discretion</span>
+                                    </div>
+                                    <div class="stat">
+                                        <strong>₦2.3M</strong>
+                                        <span>Documented</span>
+                                    </div>
+                                    <div class="stat">
+                                        <strong>15+</strong>
+                                        <span>Vendors</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Case Study 3 -->
-                    <div id="case3" class="case-panel">
-                        <div class="panel-inner">
-                            <div class="panel-image">
-                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=80" alt="Event operations and business execution">
-                            </div>
-                            <div class="panel-text">
-                                <div class="panel-number">03</div>
-                                <h3>Large-Scale Event Operations</h3>
+                    <!-- Stage 2: PROBLEM -->
+                    <div class="stage-panel" data-stage="problem">
+                        <div class="stage-header-badge">
+                            <span class="stage-badge-number">STAGE 02</span>
+                            <span class="stage-badge-dot"></span>
+                            <span class="stage-badge-name">PROBLEM</span>
+                        </div>
+                        <div class="stage-grid">
+                            <div class="stage-content-main">
+                                <h4 class="stage-headline">The Challenge: Personal Event Delivery Under Absolute Privacy</h4>
+                                <p class="stage-lead-text">A client living abroad needed to travel home for a family event, but for personal reasons did not want relatives to know. She needed someone she could trust with complete discretion and financial accountability.</p>
+                                <p class="stage-body-text">The difficulty lay in executing complex multi-vendor logistics without ever revealing the client's identity or presence in Nigeria. Normal agencies do not possess the sensitivity or private protocols required for confidential personal stewardship.</p>
                                 
-                                <div class="case-detail-block">
-                                    <h4>The Challenge</h4>
-                                    <p>Managing the bulk of the operational load — procurement, vendor sourcing, and budget accountability — for a church anniversary programme involving over 200 people.</p>
+                                <div class="obstacle-cards-grid">
+                                    <div class="obstacle-card">
+                                        <i class="fa-solid fa-eye-slash"></i>
+                                        <div>
+                                            <strong>Risk of Exposure</strong>
+                                            <p>Any leak to third parties or social networks would compromise the client's strict personal privacy.</p>
+                                        </div>
+                                    </div>
+                                    <div class="obstacle-card">
+                                        <i class="fa-solid fa-coins"></i>
+                                        <div>
+                                            <strong>High Financial Exposure</strong>
+                                            <p>Substantial procurement funds needed to be disbursed rapidly across 15+ vendors without losing receipt fidelity.</p>
+                                        </div>
+                                    </div>
+                                    <div class="obstacle-card">
+                                        <i class="fa-solid fa-handshake-simple"></i>
+                                        <div>
+                                            <strong>Unsupervised Vendor Sourcing</strong>
+                                            <p>Fabric merchants and stylists required on-site validation and continuous bargaining without the client present.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="case-detail-block">
-                                    <h4>Our Approach & Execution</h4>
-                                    <p>Took ownership of procurement directly. Sourced and procured branded shirts for 200+ attendees with zero shortfalls, oversaw market runs, and managed reporting throughout.</p>
+                            </div>
+                            <div class="stage-sidebar-card">
+                                <h5><i class="fa-solid fa-lock"></i> The Privacy Imperative</h5>
+                                <p>Personal engagements require rigorous data segregation and zero external chatter:</p>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> Absolute NDA protection</li>
+                                    <li><i class="fa-solid fa-check"></i> Strict confidentiality of travel dates & whereabouts</li>
+                                    <li><i class="fa-solid fa-check"></i> Zero leakage across mutual community circles</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 3: PROCESS -->
+                    <div class="stage-panel" data-stage="process">
+                        <div class="stage-header-badge">
+                            <span class="stage-badge-number">STAGE 03</span>
+                            <span class="stage-badge-dot"></span>
+                            <span class="stage-badge-name">PROCESS</span>
+                        </div>
+                        <div class="stage-grid">
+                            <div class="stage-content-main">
+                                <h4 class="stage-headline">Our Approach: Autonomous Execution & Strict Accountability</h4>
+                                <p class="stage-lead-text">Took on the role of her on-the-ground representative. Sourced fabrics, coordinated vendors, managed every purchase, and provided ongoing updates — continuing to source items even after she returned abroad.</p>
+                                
+                                <div class="process-steps-timeline">
+                                    <div class="process-step-item">
+                                        <span class="process-step-pill">Phase 1</span>
+                                        <div class="process-step-text">
+                                            <strong>Material & Fabric Sourcing</strong>
+                                            <p>Direct visits to top Lagos textile markets to inspect quality, negotiate bulk rates, and send live video feeds for confidential approval.</p>
+                                        </div>
+                                    </div>
+                                    <div class="process-step-item">
+                                        <span class="process-step-pill">Phase 2</span>
+                                        <div class="process-step-text">
+                                            <strong>Multi-Vendor Coordination & Payment Ledger</strong>
+                                            <p>Managed 15+ independent suppliers and tailors with itemized payment receipts and milestone verification before releasing funds.</p>
+                                        </div>
+                                    </div>
+                                    <div class="process-step-item">
+                                        <span class="process-step-pill">Phase 3</span>
+                                        <div class="process-step-text">
+                                            <strong>Post-Departure Follow-Through</strong>
+                                            <p>Maintained representation after the client returned abroad, ensuring final garments and items were properly collected, accounted for, and secured.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="case-detail-block">
-                                    <h4>The Outcome</h4>
-                                    <p>The programme ran smoothly with full accountability for every item procured and every naira spent — nothing missing, nothing unaccounted for.</p>
+                            </div>
+                            <div class="stage-sidebar-card">
+                                <h5><i class="fa-solid fa-shield-check"></i> The Confidential Standard</h5>
+                                <p>Every receipt, vendor communication, and transaction record is safeguarded under strict privacy protocols.</p>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> Encrypted communications & reports</li>
+                                    <li><i class="fa-solid fa-check"></i> Complete audit ledger presented upon close</li>
+                                    <li><i class="fa-solid fa-check"></i> All materials securely delivered on schedule</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 4: SOLUTION -->
+                    <div class="stage-panel" data-stage="solution">
+                        <div class="stage-header-badge">
+                            <span class="stage-badge-number">STAGE 04</span>
+                            <span class="stage-badge-dot"></span>
+                            <span class="stage-badge-name">SOLUTION</span>
+                        </div>
+                        <div class="stage-grid">
+                            <div class="stage-content-main">
+                                <h4 class="stage-headline">Proven Results: Flawless Execution & 100% Discretion</h4>
+                                <p class="stage-lead-text">The entire engagement was conducted without a single leak, shortfall, or financial ambiguity. Every transaction was backed by a verified paper trail.</p>
+                                
+                                <div class="results-grid">
+                                    <div class="result-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>100% discretion maintained throughout the engagement</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>₦2.3M+ in purchases fully documented with receipts</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>15+ vendors coordinated with complete accuracy</span>
+                                    </div>
+                                </div>
+                                <p class="stage-body-text">The client achieved her personal goals with complete privacy, zero stress, and total transparency on how every single naira was utilized.</p>
+                            </div>
+                            <div class="stage-sidebar-card">
+                                <h5><i class="fa-solid fa-receipt"></i> Verified Financials</h5>
+                                <p>Absolute clarity down to the kobo:</p>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> <strong>₦2.3M+</strong> fully accounted for</li>
+                                    <li><i class="fa-solid fa-check"></i> <strong>15+</strong> suppliers managed with zero dispute</li>
+                                    <li><i class="fa-solid fa-check"></i> <strong>100%</strong> client peace of mind achieved</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 5: TAKEAWAY -->
+                    <div class="stage-panel" data-stage="takeaway">
+                        <div class="stage-header-badge">
+                            <span class="stage-badge-number">STAGE 05</span>
+                            <span class="stage-badge-dot"></span>
+                            <span class="stage-badge-name">TAKEAWAY</span>
+                        </div>
+                        <div class="takeaway-featured-box">
+                            <blockquote class="takeaway-quote">
+                                "When trust is the real currency, discretion and documentation are not optional — they are the foundation of every decision."
+                            </blockquote>
+                            <div class="takeaway-footer">
+                                <div class="takeaway-attribution">
+                                    <strong>Founder's Principle &bull; Stevorra</strong>
+                                    <span>Drawn from direct founder experience, pre-launch</span>
+                                </div>
+                                <a href="contact.html" class="btn btn-primary">Inquire Confidentially <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage Footer Nav -->
+                    <div class="stage-footer-nav">
+                        <button class="btn-stage-nav btn-stage-prev" type="button" disabled>
+                            <i class="fa-solid fa-arrow-left"></i> <span>Previous Stage</span>
+                        </button>
+                        <div class="stage-counter-badge">
+                            <span>Stage <strong class="current-stage-num">1</strong> of 5</span>
+                        </div>
+                        <button class="btn-stage-nav btn-stage-next" type="button">
+                            <span>Next: Problem</span> <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- ==================== CASE 03 ==================== -->
+                <article id="case3" class="case-deck-panel" role="tabpanel" aria-label="Large-Scale Event Operations Case Study">
+                    <div class="case-meta-header">
+                        <div>
+                            <span class="service-tag">Case 03</span>
+                            <h2><i class="fa-solid fa-calendar-check"></i> Large-Scale Event Operations</h2>
+                        </div>
+                    </div>
+
+                    <!-- Stage 1: CONTEXT -->
+                    <div class="stage-panel active" data-stage="context">
+                        <div class="stage-header-badge">
+                            <span class="stage-badge-number">STAGE 01</span>
+                            <span class="stage-badge-dot"></span>
+                            <span class="stage-badge-name">CONTEXT</span>
+                        </div>
+                        <div class="stage-grid">
+                            <div class="stage-content-main">
+                                <h4 class="stage-headline">200+ people. Every detail accounted for.</h4>
+                                <p class="stage-lead-text">A high-visibility church anniversary required careful procurement and tight accountability across a large guest count and budget.</p>
+                                
+                                <div class="client-profile-box">
+                                    <div class="profile-item">
+                                        <i class="fas fa-user-tie"></i>
+                                        <div>
+                                            <strong>Client</strong>
+                                            <span>Church Anniversary Programme</span>
+                                        </div>
+                                    </div>
+                                    <div class="profile-item">
+                                        <i class="fas fa-clock"></i>
+                                        <div>
+                                            <strong>Timeline</strong>
+                                            <span>Short-Window Event Delivery</span>
+                                        </div>
+                                    </div>
+                                    <div class="profile-item">
+                                        <i class="fas fa-chart-line"></i>
+                                        <div>
+                                            <strong>Scale</strong>
+                                            <span>200+ Attendees and Multi-Item Procurement</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="stage-body-text">Large programmes carry enormous reputational stakes. When an event involves hundreds of participants, multiple leadership committees, and substantial capital outlay, procurement errors or missing items are immediately visible.</p>
+                            </div>
+                            <div class="stage-visual-box">
+                                <div class="visual-placeholder vp-event">
+                                    <i class="fa-solid fa-calendar-check vp-icon"></i>
+                                    <span class="vp-label">Event Operations</span>
+                                    <span class="vp-tagline">Large-scale procurement with full accountability</span>
+                                </div>
+                                <div class="image-badge"><i class="fa-solid fa-award"></i> The details stayed honest.</div>
+                                <div class="floating-stats-card">
+                                    <div class="stat">
+                                        <strong>200+</strong>
+                                        <span>People</span>
+                                    </div>
+                                    <div class="stat">
+                                        <strong>4.7M</strong>
+                                        <span>Budget</span>
+                                    </div>
+                                    <div class="stat">
+                                        <strong>100%</strong>
+                                        <span>Accountability</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                </div>
+                    <!-- Stage 2: PROBLEM -->
+                    <div class="stage-panel" data-stage="problem">
+                        <div class="stage-header-badge">
+                            <span class="stage-badge-number">STAGE 02</span>
+                            <span class="stage-badge-dot"></span>
+                            <span class="stage-badge-name">PROBLEM</span>
+                        </div>
+                        <div class="stage-grid">
+                            <div class="stage-content-main">
+                                <h4 class="stage-headline">The Challenge: Heavy Operational Load Under Tight Timelines</h4>
+                                <p class="stage-lead-text">Managing the bulk of the operational load — procurement, vendor sourcing, and budget accountability — for a church anniversary programme involving over 200 people.</p>
+                                <p class="stage-body-text">The organizing committee needed an operational partner who could eliminate vendor delays, guarantee quality production for branded materials, and keep financial accounting transparent for all stakeholders.</p>
+                                
+                                <div class="obstacle-cards-grid">
+                                    <div class="obstacle-card">
+                                        <i class="fa-solid fa-users"></i>
+                                        <div>
+                                            <strong>High Guest Volume</strong>
+                                            <p>Serving 200+ guests meant zero tolerance for sizing shortages, print discrepancies, or logistical delays.</p>
+                                        </div>
+                                    </div>
+                                    <div class="obstacle-card">
+                                        <i class="fa-solid fa-calculator"></i>
+                                        <div>
+                                            <strong>Strict Committee Oversight</strong>
+                                            <p>A multi-million naira budget required line-by-line financial tracking with zero unexplained expense variances.</p>
+                                        </div>
+                                    </div>
+                                    <div class="obstacle-card">
+                                        <i class="fa-solid fa-truck-ramp-box"></i>
+                                        <div>
+                                            <strong>Tight Procurement Window</strong>
+                                            <p>Fabric purchasing, tailoring, branding, and packaging had to be coordinated simultaneously within days.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stage-sidebar-card">
+                                <h5><i class="fa-solid fa-clipboard-check"></i> Operational Risks</h5>
+                                <p>Large-scale public events fail when details are handled carelessly:</p>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> High reputational stakes with church leadership</li>
+                                    <li><i class="fa-solid fa-check"></i> Vendor price gouging on last-minute orders</li>
+                                    <li><i class="fa-solid fa-check"></i> Discrepancies causing audit friction</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 3: PROCESS -->
+                    <div class="stage-panel" data-stage="process">
+                        <div class="stage-header-badge">
+                            <span class="stage-badge-number">STAGE 03</span>
+                            <span class="stage-badge-dot"></span>
+                            <span class="stage-badge-name">PROCESS</span>
+                        </div>
+                        <div class="stage-grid">
+                            <div class="stage-content-main">
+                                <h4 class="stage-headline">Our Approach: Direct Procurement Ownership & Audit Discipline</h4>
+                                <p class="stage-lead-text">Took ownership of procurement directly. Sourced and procured branded shirts for 200+ attendees with zero shortfalls, oversaw market runs, and managed reporting throughout.</p>
+                                
+                                <div class="process-steps-timeline">
+                                    <div class="process-step-item">
+                                        <span class="process-step-pill">Phase 1</span>
+                                        <div class="process-step-text">
+                                            <strong>Direct Market Runs & Bulk Sourcing</strong>
+                                            <p>Conducted extensive on-site market runs to secure high-quality textiles and production partners at optimal pricing.</p>
+                                        </div>
+                                    </div>
+                                    <div class="process-step-item">
+                                        <span class="process-step-pill">Phase 2</span>
+                                        <div class="process-step-text">
+                                            <strong>Quality Inspection & Shortfall Prevention</strong>
+                                            <p>Personally inspected print runs, sizing accuracy, and packaging for 200+ branded shirts before accepting final delivery.</p>
+                                        </div>
+                                    </div>
+                                    <div class="process-step-item">
+                                        <span class="process-step-pill">Phase 3</span>
+                                        <div class="process-step-text">
+                                            <strong>Real-Time Financial Ledger & Reconciliation</strong>
+                                            <p>Tracked every outlay with corresponding vendor invoices, delivering a clear financial report to committee heads.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stage-sidebar-card">
+                                <h5><i class="fa-solid fa-scale-balanced"></i> Financial Stewardship</h5>
+                                <p>Every single naira accounted for through receipts and audited ledgers.</p>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> Pre-negotiated bulk vendor rates</li>
+                                    <li><i class="fa-solid fa-check"></i> Live milestone reporting to committee</li>
+                                    <li><i class="fa-solid fa-check"></i> Complete audit package on event day</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 4: SOLUTION -->
+                    <div class="stage-panel" data-stage="solution">
+                        <div class="stage-header-badge">
+                            <span class="stage-badge-number">STAGE 04</span>
+                            <span class="stage-badge-dot"></span>
+                            <span class="stage-badge-name">SOLUTION</span>
+                        </div>
+                        <div class="stage-grid">
+                            <div class="stage-content-main">
+                                <h4 class="stage-headline">Proven Results: ₦4.7M Budget Reconciled With 100% Accuracy</h4>
+                                <p class="stage-lead-text">The anniversary programme was delivered without operational disruption. All 200+ participants received branded items promptly, and the entire budget was reconciled down to the kobo.</p>
+                                
+                                <div class="results-grid">
+                                    <div class="result-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>200+ people served without operational disruption</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>₦4.7M budget managed with 100% accountability</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>All purchases fully tracked and reconciled</span>
+                                    </div>
+                                </div>
+                                <p class="stage-body-text">The event committee celebrated a landmark anniversary with absolute confidence, free from the procurement headaches and missing items typical of large programmes.</p>
+                            </div>
+                            <div class="stage-sidebar-card">
+                                <h5><i class="fa-solid fa-award"></i> The Execution Ledger</h5>
+                                <p>Zero operational shortfalls delivered under pressure:</p>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i> <strong>200+</strong> attendees outfitted on time</li>
+                                    <li><i class="fa-solid fa-check"></i> <strong>₦4.7M</strong> audited with zero discrepancy</li>
+                                    <li><i class="fa-solid fa-check"></i> Unanimous committee commendation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage 5: TAKEAWAY -->
+                    <div class="stage-panel" data-stage="takeaway">
+                        <div class="stage-header-badge">
+                            <span class="stage-badge-number">STAGE 05</span>
+                            <span class="stage-badge-dot"></span>
+                            <span class="stage-badge-name">TAKEAWAY</span>
+                        </div>
+                        <div class="takeaway-featured-box">
+                            <blockquote class="takeaway-quote">
+                                "Large events do not fail because of one bad decision — they fail because no one is keeping the details honest. Accountability keeps the whole operation standing."
+                            </blockquote>
+                            <div class="takeaway-footer">
+                                <div class="takeaway-attribution">
+                                    <strong>Founder's Principle &bull; Stevorra</strong>
+                                    <span>Drawn from direct founder experience, pre-launch</span>
+                                </div>
+                                <a href="contact.html" class="btn btn-primary">Discuss Event Execution <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stage Footer Nav -->
+                    <div class="stage-footer-nav">
+                        <button class="btn-stage-nav btn-stage-prev" type="button" disabled>
+                            <i class="fa-solid fa-arrow-left"></i> <span>Previous Stage</span>
+                        </button>
+                        <div class="stage-counter-badge">
+                            <span>Stage <strong class="current-stage-num">1</strong> of 5</span>
+                        </div>
+                        <button class="btn-stage-nav btn-stage-next" type="button">
+                            <span>Next: Problem</span> <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+
             </div>
         </div>
     </section>
@@ -196,24 +918,28 @@
             <div class="protection-grid">
                 <!-- Point 1 -->
                 <div class="protect-card reveal delay-1">
+                    <span class="protect-card-number">01</span>
                     <i class="fa-solid fa-users-gear protect-icon"></i>
-                    <h3>A Team, Not a Single Point of Contact</h3>
-                    <p>Every engagement is assigned a dedicated lead — backed by a team. If your point of contact is unavailable, your project doesn't stall. Continuity is built into how we operate.</p>
+                    <h3>Direct Founder Oversight, No Middlemen</h3>
+                    <p>Every engagement is handled directly by the founder. You will never be handed off to a junior associate, an intern, or a call center. This ensures absolute continuity, deeper understanding of your specific needs, and a personal stake in the successful execution of your project.</p>
                 </div>
                 <!-- Point 2 -->
                 <div class="protect-card reveal delay-2">
+                    <span class="protect-card-number">02</span>
                     <i class="fa-solid fa-file-signature protect-icon"></i>
                     <h3>Contracts Before Anything Begins</h3>
                     <p>Every engagement starts with a clear, written scope of work and a signed confidentiality agreement — before any task, payment, or site visit takes place.</p>
                 </div>
                 <!-- Point 3 -->
                 <div class="protect-card reveal delay-3">
+                    <span class="protect-card-number">03</span>
                     <i class="fa-solid fa-receipt protect-icon"></i>
                     <h3>An Audit Trail for Everything</h3>
                     <p>Every purchase has a receipt. Every site visit has a report. Every recommendation is in writing. There's a documented answer for everything, not a memory to rely on.</p>
                 </div>
                 <!-- Point 4 -->
                 <div class="protect-card reveal delay-4">
+                    <span class="protect-card-number">04</span>
                     <i class="fa-solid fa-bullhorn protect-icon"></i>
                     <h3>If Something Goes Wrong, You Hear It First</h3>
                     <p>Weekly reporting exists so issues surface early. If something doesn't go to plan, we tell you directly, alongside what we're doing about it to course-correct immediately.</p>
@@ -223,29 +949,42 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section section-padding">
-        <div class="container faq-grid">
-            <div class="faq-sidebar reveal-left">
-                <h3>Still have a question? Get closer.</h3>
-                <p style="margin-bottom: 2rem; opacity: 0.9;">We believe trust is built through consistency and transparency. Reach out if you need more details.</p>
-                <a href="contact.html" class="btn btn-outline-light">Contact Us</a>
+    <section class="homepage-faq-section section-padding">
+        <div class="container homepage-faq-grid">
+            <div class="homepage-faq-intro reveal-left">
+                <span class="subtitle">Frequently Asked Questions</span>
+                <h2>Clear answers before you begin.</h2>
+                <p>Good representation starts with clear expectations. Here are answers to the questions clients ask most often.</p>
+                <a href="contact.html" class="btn btn-primary">Ask Us Directly <span aria-hidden="true">&#8594;</span></a>
             </div>
-            <div class="accordion reveal-right">
+            <div class="homepage-accordion reveal-right">
                 <details open>
-                    <summary>How do I know my money is being spent correctly?</summary>
-                    <p>Every purchase is documented with receipts, and significant spending requires your approval before it happens. You'll also receive regular reports with photos or video so you can see, not just hear, what's been done.</p>
+                    <summary>What exactly does Stevorra do?</summary>
+                    <p>Stevorra provides trusted on-ground representation and operational support for individuals, professionals, businesses, and property owners who need reliable assistance when they cannot be physically present.</p>
                 </details>
                 <details>
-                    <summary>Can I use Stevorra for a one-off task, or only ongoing work?</summary>
-                    <p>Both. Some engagements are one-time — a single verification, a specific purchase, a one-off property fix. Others are ongoing, like routine property oversight or a contract-based corporate engagement.</p>
+                    <summary>Who can use Stevorra?</summary>
+                    <p>Our services are designed for diaspora clients, international clients, executives, professionals, businesses, organisations, and property owners who require trusted support on the ground.</p>
                 </details>
                 <details>
-                    <summary>How do you handle discretion and confidentiality?</summary>
-                    <p>Discretion is one of our two most important values, alongside integrity. Details of your engagement are shared only with the people directly involved in delivering it, and only to the extent needed.</p>
+                    <summary>Can you make decisions on my behalf?</summary>
+                    <p>We can act within the scope and authority you provide. Major decisions, approvals, and agreed expenditures remain subject to your instructions.</p>
                 </details>
                 <details>
-                    <summary>I'm not in Nigeria. How will I know what's happening?</summary>
-                    <p>You'll have a dedicated point of contact and a clear reporting schedule — typically weekly — with written updates, photos, and video where relevant.</p>
+                    <summary>How do I know what is happening?</summary>
+                    <p>We provide regular updates appropriate to the nature of your assignment. These may include written reports, photographs, videos, receipts, and other documentation.</p>
+                </details>
+                <details>
+                    <summary>Do you handle payments?</summary>
+                    <p>Where payment handling is part of an agreed assignment, the process, limits, and approval requirements are established in advance.</p>
+                </details>
+                <details>
+                    <summary>Can you work on an ongoing basis?</summary>
+                    <p>Yes. Depending on your needs, Stevorra can provide one-time assignments, recurring support, or ongoing representation.</p>
+                </details>
+                <details>
+                    <summary>How do I get started?</summary>
+                    <p>Simply tell us what you need. We'll discuss your requirements, clarify the scope, and explain how we can help.</p>
                 </details>
             </div>
         </div>
@@ -254,8 +993,12 @@
     <!-- Pre-Footer -->
     <section class="pre-footer">
         <div class="container pre-footer-content reveal">
-            <h2>Ready To Accelerate Your Project Execution?</h2>
-            <a href="contact.html" class="btn btn-outline-light">Book a Consultation</a>
+            <div class="pre-footer-copy">
+                <h2>Can't be there? We'll represent you.</h2>
+                <p>Distance shouldn't stop you from getting important things done properly.</p>
+                <p>Tell us what you need, and let's discuss how Stevorra can help.</p>
+            </div>
+            <a href="contact.html" class="btn btn-outline-light">Talk to Stevorra <span aria-hidden="true">&#8594;</span></a>
         </div>
     </section>
 
@@ -264,7 +1007,12 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-logo reveal delay-1">
-                    <img src="images/logo2.png" alt="Stevorra logo" class="footer-brand-logo">
+                    <span class="footer-brand-lockup" aria-label="Stevorra">
+                        <img src="images/logo.png" alt="" class="footer-brand-mark">
+                        <span class="footer-brand-copy">
+                            <span class="brand-wordmark">Stevorra</span>
+                        </span>
+                    </span>
                     <p>Africa's Premium Representation & Stewardship Company built on trust, discretion, and execution.</p>
                 </div>
                 <div class="footer-col reveal delay-2">
@@ -293,70 +1041,247 @@
                         <li><i class="fa-solid fa-envelope"></i> hello.stevorra.com@gmail.com</li>
                         <li><i class="fa-solid fa-location-dot"></i> Lagos, Nigeria</li>
                     </ul>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/stevorra?stkn=M24waGJ0b3phdTBs" target="_blank" rel="noopener noreferrer" aria-label="Follow Stevorra on Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/234703125899" target="_blank" rel="noopener noreferrer" aria-label="Contact Stevorra on WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom reveal">
-                <p>&copy; 2024 Stevorra. All rights reserved. | WE REPRESENT. WE PROTECT. WE DELIVER.</p>
+                <p>&copy; 2026 Stevorra. All rights reserved. | WE REPRESENT. WE PROTECT. WE DELIVER.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Interactive Tabs Script & Observer -->
+    <!-- Mobile nav toggle, scroll-reveal, and tab logic now live in js/case-study.js -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const menuToggle = document.querySelector('.mobile-menu-toggle');
-            const navLinks = document.querySelector('.nav-links');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
-            if (menuToggle && navLinks) {
-                menuToggle.addEventListener('click', () => {
-                    const isOpen = navLinks.classList.toggle('open');
-                    menuToggle.setAttribute('aria-expanded', String(isOpen));
-                });
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('open');
+            menuToggle.setAttribute('aria-expanded', String(isOpen));
+        });
 
-                navLinks.querySelectorAll('a').forEach(link => {
-                    link.addEventListener('click', () => {
-                        navLinks.classList.remove('open');
-                        menuToggle.setAttribute('aria-expanded', 'false');
-                    });
-                });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
+
+    // ==========================================
+    // PRESENTATION DECK & TEMPLATE CONTROLLER
+    // ==========================================
+    const STAGES = ['context', 'problem', 'process', 'solution', 'takeaway'];
+    const STAGE_NAMES = {
+        context: 'Context',
+        problem: 'Problem',
+        process: 'Process',
+        solution: 'Solution',
+        takeaway: 'Takeaway'
+    };
+
+    let activeCaseId = 'case1';
+    let currentStageIndex = 0;
+    let isExpandedMode = false;
+
+    const deckCard = document.querySelector('.presentation-deck-card');
+    const caseButtons = document.querySelectorAll('.case-selector-btn');
+    const casePanels = document.querySelectorAll('.case-deck-panel');
+    const stageNavItems = document.querySelectorAll('.stage-nav-item');
+    const viewModeButtons = document.querySelectorAll('.view-mode-btn');
+
+    const updateStageFooterControls = (panel) => {
+        if (!panel) return;
+        const prevBtn = panel.querySelector('.btn-stage-prev');
+        const nextBtn = panel.querySelector('.btn-stage-next');
+        const stageNum = panel.querySelector('.current-stage-num');
+
+        if (stageNum) {
+            stageNum.textContent = String(currentStageIndex + 1);
+        }
+
+        if (prevBtn) {
+            if (currentStageIndex === 0) {
+                prevBtn.setAttribute('disabled', 'true');
+                const span = prevBtn.querySelector('span');
+                if (span) span.textContent = 'Previous Stage';
+            } else {
+                prevBtn.removeAttribute('disabled');
+                const prevStageKey = STAGES[currentStageIndex - 1];
+                const span = prevBtn.querySelector('span');
+                if (span) span.textContent = `Previous: ${STAGE_NAMES[prevStageKey]}`;
             }
+        }
 
-            // --- Tab Switching Logic ---
-            const tabButtons = document.querySelectorAll('.tab-btn');
-            const casePanels = document.querySelectorAll('.case-panel');
+        if (nextBtn) {
+            if (currentStageIndex === STAGES.length - 1) {
+                nextBtn.setAttribute('disabled', 'true');
+                const span = nextBtn.querySelector('span');
+                if (span) span.textContent = 'Completed (05/05)';
+            } else {
+                nextBtn.removeAttribute('disabled');
+                const nextStageKey = STAGES[currentStageIndex + 1];
+                const span = nextBtn.querySelector('span');
+                if (span) span.textContent = `Next: ${STAGE_NAMES[nextStageKey]}`;
+            }
+        }
+    };
 
-            tabButtons.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    // Remove active class from all buttons and panels
-                    tabButtons.forEach(b => b.classList.remove('active'));
-                    casePanels.forEach(p => p.classList.remove('active'));
+    const activateStage = (stageName, shouldScroll = false) => {
+        const targetIndex = STAGES.indexOf(stageName);
+        if (targetIndex === -1) return;
+        currentStageIndex = targetIndex;
 
-                    // Add active class to clicked button
-                    btn.classList.add('active');
+        // Update presentation navigation tabs
+        stageNavItems.forEach(item => {
+            const isMatch = item.getAttribute('data-stage') === stageName;
+            item.classList.toggle('active', isMatch);
+            item.setAttribute('aria-selected', String(isMatch));
+        });
 
-                    // Find corresponding panel and activate it
-                    const targetId = btn.getAttribute('data-target');
-                    const targetPanel = document.getElementById(targetId);
-                    
-                    if (targetPanel) {
-                        targetPanel.classList.add('active');
-                    }
-                });
+        // Update stage panels in current active case
+        const activePanel = document.getElementById(activeCaseId);
+        if (activePanel) {
+            const stagePanels = activePanel.querySelectorAll('.stage-panel');
+            stagePanels.forEach(panel => {
+                const isMatch = panel.getAttribute('data-stage') === stageName;
+                if (!isExpandedMode) {
+                    panel.classList.toggle('active', isMatch);
+                }
+                if (isMatch && (shouldScroll || isExpandedMode)) {
+                    panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+            updateStageFooterControls(activePanel);
+        }
+    };
+
+    const activateCase = (targetCaseId) => {
+        const targetBtn = document.querySelector(`.case-selector-btn[data-case="${targetCaseId}"]`);
+        const targetPanel = document.getElementById(targetCaseId);
+
+        if (!targetBtn || !targetPanel) return;
+
+        activeCaseId = targetCaseId;
+
+        caseButtons.forEach(btn => {
+            const isMatch = btn.getAttribute('data-case') === targetCaseId;
+            btn.classList.toggle('active', isMatch);
+            btn.setAttribute('aria-selected', String(isMatch));
+        });
+
+        casePanels.forEach(panel => {
+            panel.classList.remove('active');
+        });
+        targetPanel.classList.add('active');
+
+        // Sync stage within new case
+        activateStage(STAGES[currentStageIndex]);
+    };
+
+    // Case selection event listeners
+    caseButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const caseId = btn.getAttribute('data-case');
+            activateCase(caseId);
+            if (history.replaceState) {
+                history.replaceState(null, null, `#${caseId}`);
+            }
+        });
+    });
+
+    // Stage navigation event listeners
+    stageNavItems.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const stage = btn.getAttribute('data-stage');
+            activateStage(stage, isExpandedMode);
+        });
+    });
+
+    // View Mode Switcher
+    viewModeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const mode = btn.getAttribute('data-mode');
+            isExpandedMode = (mode === 'expanded');
+
+            viewModeButtons.forEach(b => {
+                const isActive = b.getAttribute('data-mode') === mode;
+                b.classList.toggle('active', isActive);
+                b.setAttribute('aria-pressed', String(isActive));
             });
 
-            // --- Scroll Animations Logic ---
-            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
+            if (deckCard) {
+                deckCard.classList.toggle('mode-expanded', isExpandedMode);
+            }
+
+            // Sync panels visibility
+            const activePanel = document.getElementById(activeCaseId);
+            if (activePanel) {
+                const stagePanels = activePanel.querySelectorAll('.stage-panel');
+                stagePanels.forEach(p => {
+                    if (isExpandedMode) {
+                        p.classList.add('active');
+                    } else {
+                        const isCurrent = p.getAttribute('data-stage') === STAGES[currentStageIndex];
+                        p.classList.toggle('active', isCurrent);
                     }
                 });
-            }, observerOptions);
-
-            const animatedElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
-            animatedElements.forEach(el => observer.observe(el));
+            }
         });
+    });
+
+    // Footer Next / Prev buttons within each case panel
+    casePanels.forEach(panel => {
+        const prevBtn = panel.querySelector('.btn-stage-prev');
+        const nextBtn = panel.querySelector('.btn-stage-next');
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                if (currentStageIndex > 0) {
+                    activateStage(STAGES[currentStageIndex - 1]);
+                }
+            });
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                if (currentStageIndex < STAGES.length - 1) {
+                    activateStage(STAGES[currentStageIndex + 1]);
+                }
+            });
+        }
+    });
+
+    // Deep link from URL hash (#case1, #case2, #case3)
+    const initialHash = window.location.hash.replace('#', '');
+    if (initialHash && ['case1', 'case2', 'case3'].includes(initialHash)) {
+        activateCase(initialHash);
+    } else {
+        activateCase('case1');
+    }
+
+    // --- Scroll Animations Logic ---
+    const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, observerOptions);
+
+    const animatedElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    animatedElements.forEach(el => observer.observe(el));
+});
     </script>
 </body>
 </html>

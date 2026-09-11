@@ -137,7 +137,7 @@ img {
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(15, 39, 71, 0.04);
     transition: var(--transition);
-    min-height: 118px;
+    min-height: 68px;
     width: 100%;
 }
 
@@ -153,7 +153,7 @@ img {
     justify-content: center;
     background: var(--deep-navy);
     color: var(--champagne-gold);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     flex-shrink: 0;
 }
 
@@ -309,6 +309,32 @@ img {
     filter: drop-shadow(0 6px 10px rgba(15, 39, 71, 0.12));
 }
 
+.brand-lockup {
+    display: grid;
+    grid-template-columns: 50px auto;
+    column-gap: 10px;
+    align-items: center;
+    text-align: left;
+}
+
+.brand-mark {
+    display: block;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.brand-wordmark,
+.footer-brand-copy .brand-wordmark {
+    color: var(--deep-navy);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
 .logo-main {
     font-family: var(--font-heading);
     font-size: 2.2rem;
@@ -343,6 +369,29 @@ img {
     filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2));
 }
 
+.footer-brand-lockup {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+
+.footer-brand-mark {
+    display: block;
+    width: 68px;
+    height: 68px;
+    object-fit: contain;
+}
+
+.footer-brand-copy {
+    display: grid;
+    min-width: 0;
+}
+
+.footer-brand-copy .brand-wordmark {
+    color: var(--champagne-gold);
+}
+
 .nav-links {
     display: flex;
     gap: 30px;
@@ -364,44 +413,243 @@ img {
 }
 
 .page-header {
-    background-color: var(--ivory);
-    padding: 4rem 0 1rem 0;
-    border-bottom: 1px solid rgba(15, 39, 71, 0.1);
+    background: linear-gradient(135deg, var(--deep-navy) 0%, #081628 100%);
+    padding: 5.5rem 0 4rem 0;
+    border-bottom: 3px solid var(--champagne-gold);
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(ellipse at 20% 50%, rgba(203, 169, 106, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(31, 90, 68, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.page-header .container {
+    position: relative;
+    z-index: 1;
 }
 
 .page-header h1 {
     font-size: 3.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--ivory);
 }
 
 .breadcrumbs {
     font-size: 0.9rem;
-    color: rgba(26, 26, 26, 0.6);
+    color: rgba(247, 245, 242, 0.8);
 }
 
 .breadcrumbs a {
     color: var(--champagne-gold);
     font-weight: 500;
 }
+/* Pre-Footer CTA */
+        .pre-footer {
+            background: var(--forest-green);
+                    padding: 4rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .pre-footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 3rem;
+            padding: 1rem 0;
+        }
 
-.pre-footer {
-    background-color: var(--forest-green);
-    padding: 5rem 0;
-    text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
+        /* .pre-footer-copy {
+            max-width: 720px;
+        } */
 
-.pre-footer-content {
+        .pre-footer-copy .subtitle {
+            color: var(--champagne-gold);
+            margin-bottom: 0.8rem;
+        }
+
+        .pre-footer h2 {
+            color: var(--ivory);
+            margin-bottom: 0.8rem;
+            font-size: clamp(2.4rem, 5vw, 4rem);
+            line-height: 1;
+        }
+
+        .pre-footer-copy p {
+            color: rgba(247, 245, 242, 0.82);
+            font-size: 1.05rem;
+            margin: 0.25rem 0;
+        }
+
+        .pre-footer .btn {
+            flex-shrink: 0;
+        }
+
+
+/* =========================================
+   PREMIUM SOLO-FOUNDER ENHANCEMENTS
+   ========================================= */
+
+/* 1. Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    z-index: 9999;
+    transition: var(--transition);
+    border: 2px solid var(--white);
 }
 
-.pre-footer h2 {
-    color: var(--ivory);
-    margin: 0;
-    font-size: 2.5rem;
+.whatsapp-float:hover {
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5);
+    background-color: #20BA5A;
 }
+
+/* 2. Enhance Timeline for Solo Journey */
+.timeline-horizontal::before {
+    background: linear-gradient(90deg, transparent, var(--champagne-gold), transparent);
+    height: 2px;
+}
+
+.timeline-item::before {
+    width: 16px;
+    height: 16px;
+    background-color: var(--deep-navy);
+    border: 3px solid var(--champagne-gold);
+    box-shadow: 0 0 0 4px var(--white);
+}
+
+/* 3. Refine Value Cards for Elegance */
+.value-card {
+    border: none;
+    box-shadow: 0 10px 30px rgba(15, 39, 71, 0.04);
+    transition: var(--transition);
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(15, 39, 71, 0.08);
+}
+
+.value-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.value-img::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(15, 39, 71, 0.6), transparent);
+}
+ /* Homepage FAQ Section */
+        .homepage-faq-section {
+            background: var(--ivory);
+        }
+
+        .homepage-faq-grid {
+            display: grid;
+            grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
+            gap: 5rem;
+            align-items: start;
+        }
+
+        .homepage-faq-intro {
+            position: sticky;
+            top: 120px;
+        }
+
+        .homepage-faq-intro h2 {
+            font-size: clamp(2.3rem, 4vw, 3.3rem);
+            margin-bottom: 1rem;
+        }
+
+        .homepage-faq-intro p {
+            color: rgba(26, 26, 26, 0.72);
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            max-width: 340px;
+        }
+
+        .homepage-accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+        }
+
+        .homepage-accordion details {
+            background: var(--white);
+            border: 1px solid rgba(15, 39, 71, 0.1);
+            transition: var(--transition);
+        }
+
+        .homepage-accordion details[open] {
+            border-color: rgba(203, 169, 106, 0.55);
+        }
+
+        .homepage-accordion summary {
+            align-items: center;
+            color: var(--deep-navy);
+            cursor: pointer;
+            display: flex;
+            font-size: 1.05rem;
+            font-weight: 600;
+            justify-content: space-between;
+            list-style: none;
+            padding: 1.25rem 1.5rem;
+            gap: 1rem;
+        }
+
+        .homepage-accordion summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .homepage-accordion summary::after {
+            color: var(--champagne-gold);
+            content: '+';
+            flex-shrink: 0;
+            font-family: var(--font-heading);
+            font-size: 1.7rem;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        .homepage-accordion details[open] summary::after {
+            content: '-';
+        }
+
+        .homepage-accordion details p {
+            color: rgba(26, 26, 26, 0.72);
+            font-size: 0.95rem;
+            line-height: 1.65;
+            margin: 0;
+            padding: 0 1.5rem 1.35rem;
+        }
+
+
 
 .footer {
     background-color: var(--deep-navy);
@@ -468,6 +716,31 @@ img {
     font-size: 1.1rem;
 }
 
+.footer-socials {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.footer-socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(203, 169, 106, 0.15);
+    color: var(--champagne-gold);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+    background-color: var(--champagne-gold);
+    color: var(--deep-navy);
+    transform: translateY(-3px);
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
@@ -491,10 +764,19 @@ img {
 
     .page-header h1 {
         font-size: 2.5rem;
+        color: var(--ivory);
     }
 }
 
 @media (max-width: 768px) {
+    /* 4. Mobile adjustment for WhatsApp */
+     .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 26px;
+        bottom: 20px;
+        right: 20px;
+    }
     .top-bar {
         padding: 10px 0;
     }
@@ -527,12 +809,35 @@ img {
     }
 
     .page-header {
-        padding-top: 3rem;
+        padding: 4rem 0 3rem 0;
     }
 
     .page-header h1 {
         font-size: 2.2rem;
+        color: var(--ivory);
     }
+     .homepage-faq-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+
+            .homepage-faq-intro {
+                position: static;
+            }
+
+            .homepage-faq-intro p {
+                max-width: 100%;
+            }
+
+            .homepage-accordion summary {
+                font-size: 0.95rem;
+                padding: 1.1rem 1.15rem;
+            }
+
+            .homepage-accordion details p {
+                font-size: 0.9rem;
+                padding: 0 1.15rem 1.2rem;
+            }
 
     .pre-footer {
         padding: 4rem 0;

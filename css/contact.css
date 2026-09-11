@@ -124,7 +124,7 @@
             border-bottom: 1px solid rgba(15, 39, 71, 0.1);
         }
         .page-header h1 { font-size: 3.5rem; margin-bottom: 0.5rem; }
-        .breadcrumbs { font-size: 0.9rem; color: rgba(26,26,26,0.6); }
+        .breadcrumbs { font-size: 0.9rem; color: rgba(247,245,242,0.8); }
         .breadcrumbs a { color: var(--champagne-gold); font-weight: 500; }
 
         /* --- CONTACT PAGE SPECIFIC STYLES --- */
@@ -274,11 +274,6 @@
             /* Premium Grayscale Filter for Brand Consistency */
             filter: grayscale(100%) contrast(1.1) brightness(0.9);
         }
-
-        /* Pre-Footer CTA */
-        .pre-footer { background-color: var(--forest-green); padding: 5rem 0; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); position: relative; z-index: 5; }
-        .pre-footer-content { display: flex; justify-content: space-between; align-items: center; }
-        .pre-footer h2 { color: var(--ivory); margin: 0; font-size: 2.5rem; }
 
         /* Footer */
         .footer { background-color: var(--deep-navy); color: var(--ivory); padding: 6rem 0 2rem 0; position: relative; z-index: 5; }
