@@ -40,11 +40,11 @@ a {
     transition: var(--transition);
 }
 
-/* img {
+img {
     max-width: 100%;
     height: auto;
     display: block;
-} */
+}
 
 .container {
     width: 90%;
