@@ -196,6 +196,97 @@
         .bg-navy { background-color: var(--deep-navy); }
         .bg-green { background-color: var(--forest-green); }
 
+        /* Founder's Note Section */
+        .founder-section {
+            background-color: var(--ivory);
+        }
+
+        .founder-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 2rem;
+            align-items: stretch;
+        }
+
+        .founder-photo-card {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .founder-photo-card img {
+            width: 100%;
+            height: 100%;
+            min-height: 560px;
+            object-fit: cover;
+            object-position: top center;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(15, 39, 71, 0.08);
+            border: 1px solid rgba(15, 39, 71, 0.06);
+            display: block;
+        }
+
+        .founder-text-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 4px;
+            border: 1px solid rgba(15, 39, 71, 0.08);
+            box-shadow: 0 4px 20px rgba(15, 39, 71, 0.03);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .founder-text-card h2 {
+            font-size: 2.4rem;
+            margin-bottom: 1.2rem;
+            color: var(--deep-navy);
+            line-height: 1.2;
+        }
+
+        .founder-text-card p {
+            font-size: 1rem;
+            color: rgba(26, 26, 26, 0.78);
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+            font-weight: 300;
+        }
+
+        .founder-text-card p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .founder-text-card strong {
+            color: var(--deep-navy);
+        }
+
+        .founder-quote {
+            border-left: 3px solid var(--champagne-gold);
+            padding: 1rem 1.2rem;
+            margin: 1.2rem 0;
+            background: rgba(15, 39, 71, 0.04);
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            color: var(--deep-navy);
+            font-weight: 600;
+            font-style: italic;
+            line-height: 1.4;
+        }
+
+        .founder-closing {
+            margin-top: 0.5rem;
+            font-weight: 500 !important;
+            color: var(--deep-navy) !important;
+        }
+
+        .founder-welcome {
+            font-family: var(--font-heading);
+            font-size: 1.5rem !important;
+            color: var(--deep-navy) !important;
+            font-weight: 700 !important;
+            margin-bottom: 0 !important;
+        }
+
         /* Section 3: Leadership Philosophy (Dark Section) */
         .dark-banner {
             background-color: var(--deep-navy); color: var(--ivory);
@@ -256,6 +347,11 @@
         /* Responsive */
         @media (max-width: 992px) {
             .exist-grid, .banner-grid, .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .founder-layout { grid-template-columns: 1fr; gap: 1.5rem; }
+            .founder-photo-card img { min-height: 420px; }
+            .founder-text-card { padding: 2rem; }
+            .founder-hero { grid-template-columns: 1fr; gap: 2.5rem; }
+            .founder-image-wrap img { height: 450px; }
             .timeline-horizontal { grid-template-columns: 1fr; }
             .timeline-horizontal::before { display: none; }
             .timeline-item { padding-top: 0; padding-left: 30px; border-left: 1px solid rgba(15,39,71,0.1); padding-bottom: 30px; }
@@ -306,4 +402,13 @@
             .footer-grid { grid-template-columns: 1fr; }
             .top-bar-contact { display: none; }
             .exist-list { grid-template-columns: 1fr; }
+            .founder-layout { gap: 1.25rem; }
+            .founder-photo-card img { min-height: 300px; }
+            .founder-text-card { padding: 1.5rem; }
+            .founder-text-card h2 { font-size: 2rem; }
+            .founder-quote { font-size: 1.1rem; padding: 1rem 1.2rem; }
+            .founder-welcome { font-size: 1.4rem !important; }
+            .founder-image-wrap img { height: 350px; }
+            .founder-intro h2 { font-size: 2.2rem; }
+            .founder-highlight { font-size: 1.3rem !important; }
         }

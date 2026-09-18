@@ -459,6 +459,68 @@
             height: 500px;
         }
 
+        .story-banner {
+            position: relative;
+            background-image: linear-gradient(rgba(15, 39, 71, 0.72), rgba(15, 39, 71, 0.72)), url('../images/founder_hero.png');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            min-height: 620px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .story-banner-inner {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            padding: 4rem 0;
+        }
+
+        .story-banner-copy {
+            width: min(100%, 620px);
+            background: rgba(247, 245, 242, 0.08);
+            border: 1px solid rgba(203, 169, 106, 0.5);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            padding: 2.5rem 2rem;
+            box-shadow: 0 20px 40px rgba(15, 39, 71, 0.18);
+        }
+
+        .story-banner-copy .subtitle {
+            color: var(--champagne-gold);
+        }
+
+        .story-banner-copy h2 {
+            color: var(--ivory);
+            font-size: clamp(2.4rem, 4vw, 4rem);
+            margin-bottom: 1rem;
+        }
+
+        .story-banner-copy p {
+            color: rgba(247, 245, 242, 0.9);
+            margin-bottom: 1rem;
+            font-size: 1.02rem;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .story-banner-copy strong {
+            color: var(--champagne-gold);
+            font-weight: 600;
+        }
+
+        p.story-banner-quote {
+            font-family: var(--font-heading);
+            font-size: clamp(1.6rem, 2vw, 2.2rem);
+            font-weight: 600;
+            color: var(--champagne-gold) !important;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem !important;
+            font-style: italic;
+        }
+
         /* Services Grid */
         .services-section {
             background-color: var(--white);
@@ -1095,6 +1157,15 @@
                 grid-template-columns: repeat(2, 1fr);
                 gap: 1.5rem;
             }
+            .story-banner {
+                min-height: 520px;
+            }
+            .story-banner-inner {
+                justify-content: center;
+            }
+            .story-banner-copy {
+                width: 100%;
+            }
         }
 
         @media (max-width: 768px) {
@@ -1150,6 +1221,22 @@
             .hero-slide img {
                 min-height: 420px;
                 height: 420px;
+            }
+            .story-banner {
+                min-height: 460px;
+                background-position: right center;
+            }
+            .story-banner-inner {
+                padding: 2rem 0;
+            }
+            .story-banner-copy {
+                padding: 1.5rem 1.25rem;
+            }
+            .story-banner-copy h2 {
+                font-size: 2.2rem;
+            }
+            .story-banner-copy p {
+                font-size: 0.95rem;
             }
 
             .slide-badge {
