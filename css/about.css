@@ -56,7 +56,7 @@
         .btn-outline-light:hover { background-color: var(--champagne-gold); color: var(--deep-navy); }
 
         /* Shared Section padding */
-        .section-padding { padding: 7rem 0; }
+        /* .section-padding { padding: 7rem 0; } */
         .subtitle {
             color: var(--champagne-gold); font-weight: 600; text-transform: uppercase;
             letter-spacing: 1.5px; font-size: 0.85rem; margin-bottom: 10px; display: block;
@@ -158,7 +158,10 @@
         .quote-box h5 { color: var(--champagne-gold); font-family: var(--font-body); font-size: 0.9rem; }
 
         /* Section 2: Built on Experience (Timeline & Mission Overlap) */
-        .story-section { background-color: var(--white); text-align: center; }
+        .story-section {
+             background-color: var(--white);
+              text-align: center; 
+            }
         .story-header { max-width: 800px; margin: 0 auto 4rem auto; }
         .story-header h2 { font-size: 3rem; margin-bottom: 1rem; }
         
@@ -290,7 +293,7 @@
         /* Section 3: Leadership Philosophy (Dark Section) */
         .dark-banner {
             background-color: var(--deep-navy); color: var(--ivory);
-            margin-top: 5rem; border-top: 2px solid var(--champagne-gold);
+            border-top: 2px solid var(--champagne-gold);
         }
         .banner-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
         .dark-banner h2 { color: var(--ivory); font-size: 3rem; margin-bottom: 1.5rem; }
