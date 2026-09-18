@@ -1238,6 +1238,9 @@
             .story-banner-copy p {
                 font-size: 0.95rem;
             }
+             p.story-banner-quote{
+                font-size: 1.2rem;
+             }
 
             .slide-badge {
                 top: 16px;
