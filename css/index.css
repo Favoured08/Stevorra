@@ -1132,7 +1132,7 @@
                 min-height: 320px;
             }
             .intro-images {
-                grid-template-columns: 1fr 1fr;
+                display: none;
             }
             .form-container {
                 padding: 3rem 2rem;
@@ -1278,14 +1278,7 @@
             }
 
             .intro-images {
-                grid-template-columns: 1fr;
-                gap: 16px;
-            }
-
-            .intro-images img:first-child,
-            .intro-images img:last-child {
-                height: 260px;
-                margin-top: 0;
+                display: none;
             }
 
             .serve-header {
